@@ -21,10 +21,13 @@
 
     <main>
         {% block content %}
-        <section class="page-section" id="landing-into">
+        <section class="page-section" id="landing-intro">
 
         </section>
-        <section class="page-section" id="meetups">
+        <section class="page-section" id="profile/registration">
+
+        </section>
+        <section class="page-section" id="meetups-calendar">
 
         </section>
         <section class="page-section" id="image-carousel-1">
@@ -34,20 +37,23 @@
             <div id="map"></div>
 
         </section>
-        <section class="page-section" id="profile">
-
-        </section>
+        
         <section class="page-section" id="image-carousel-2">
 
         </section>
         <section class="page-section" id="contact">
             <div class="container-fluid">
-                  {% with messages = get_flashed_messages() %} 
+                 
+        {% with messages = get_flashed_messages() %} 
             {% if messages %}
                 <ul class="flashes">
                     {% for message in messages %}
                     <li>{{ message }}</li>
                     {% endfor %}
+                </ul>
+
+            {% endif %}
+        {% endwith %}
                 </ul>
             <div>
                 <h3 class="contact-heading uppercase text-center">Do you want to get in touch?</h3>
