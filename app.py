@@ -23,6 +23,14 @@ mongo = PyMongo(app)
 def home():
     return render_template("home.html")
 
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+    if request.method == "POST":
+        flash("Thanks {}, we have received your message!".format(
+            request.form.get("name")))
+    return render_template("contact.html", page_title="Contact")
+
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
