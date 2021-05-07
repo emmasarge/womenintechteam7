@@ -1,5 +1,5 @@
 body {
-    background-color: #fafafa;
+    background-color: #f7ecec;
 }
 #map {
     height: 100%;
@@ -9,4 +9,20 @@ body {
     color: black;
     font-weight: 500;
     text-align: center;
+}
+
+/* base.html */
+
+/* header */
+
+#head {
+    height: 30vh;
+    background-color: yellow;
+}
+
+#foot {
+    height: 10vh;
+    background-color: yellow;
+    text-align: center;
+    line-height: 10vh;
 }
