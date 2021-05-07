@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -23,50 +26,53 @@
         {% block content %}
 
         <!-- all on home.html -->
-        <!-- <section class="page-section" id="landing-intro">
 
-</section>
-<section class="page-section" id="profile/registration">
+        <!--BODY 
+       <section class="page-section" id="landing-intro">
 
-</section>
-<section class="page-section" id="meetups-calendar">
+        </section>
+        <section class="page-section" id="profile/registration">
 
-</section>
-<section class="page-section" id="image-carousel-1">
+        </section>
+        <section class="page-section" id="meetups-calendar">
 
-</section>
-<section class="page-section" id="maps">
-    <div id="map"></div>
+        </section>
+        <section class="page-section" id="image-carousel-1">
 
-</section>
+        </section>
+        <section class="page-section" id="maps">
+            <div id="map"></div>
 
-<section class="page-section" id="image-carousel-2">
+        </section>
 
-</section>
-<section class="page-section" id="contact">
-    <div class="container-fluid">
-        <div>
-            <h3 class="contact-heading uppercase text-center">Do you want to get in touch?</h3>
-            <h5 class="uppercase text-center">Let us know if you have any coding meet-ups coming up, questions and
-                more...</h5>
-        </div>
-        <div class="center-form">
-            <form onsubmit="return sendMail(this);">
-                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
-                    required />
-                <textarea rows="5" name="message" class="form-control" id="message" placeholder="talk to us..."
-                    required></textarea>
-                <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
-            </form>
-        </div>
-    </div>
-    </div>
+        <section class="page-section" id="image-carousel-2">
 
-</section>--->
+        </section>
+        <section class="page-section" id="contact">
+            <div class="container-fluid">
+                <div>
+                    <h3 class="contact-heading uppercase text-center">Do you want to get in touch?</h3>
+                    <h5 class="uppercase text-center">Let us know if you have any coding meet-ups coming up, questions
+                        and
+                        more...</h5>
+                </div>
+                <div class="center-form">
+                    <form onsubmit="return sendMail(this);">
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress"
+                            placeholder="Email" required />
+                        <textarea rows="5" name="message" class="form-control" id="message" placeholder="talk to us..."
+                            required></textarea>
+                        <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                    </form>
+                </div>
+            </div>
+            </div>
+
+        </section> 
         {% endblock %}
     </main>
-
+--->
     <footer>
 
     </footer>
@@ -74,6 +80,16 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!---Bootstrap JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
     <!-- Compiled and minified JavaScript -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/maps.js') }}"></script>

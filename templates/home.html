@@ -4,37 +4,45 @@
 <h1> test
 </h1>
 
-{% for meetup in meetups %}
-{{ meetup.name }}<br>
-{{ meetup.date }}<br>
-{{ meetup.time }}<br>
-{{ meetup.address }}<br>
-{{ meetup.type }}<br>
-{{ meetup.theme }}
 
 <section class="page-section" id="landing-intro">
-
+    <div class="container-fluid"></div>
+    <h3>Code Queens ABOUT/WELCOME</h3>
 </section>
 <section class="page-section" id="profile/registration">
-
+    <div class="container-fluid">
+        <h3>login</h3>
+    </div>
 </section>
-<section class="page-section" id="meetups-calendar">
-
+<section class="page-section " id="meetups-calendar">
+    <div class="container-fluid">
+        <h3>calendar</h3>
+    </div>
 </section>
 <section class="page-section" id="image-carousel-1">
-
+    <div class="container-fluid">
+        <h3>images</h3>
+    </div>
 </section>
 <section class="page-section" id="maps">
-    <div id="map"></div>
+    <div class="container-fluid">
+
+        <h3>map</h3>
+        <div id="map"></div>
+
+    </div>
 
 </section>
 
 <section class="page-section" id="image-carousel-2">
-
+    <div class="container-fluid">
+        <h3>images</h3>
+    </div>
 </section>
-<section class="page-section" id="contact">
+<section class="page-section " id="contact">
     <div class="container-fluid">
         <div>
+            <h1>Contact</h1>
             <h3 class="contact-heading uppercase text-center">Do you want to get in touch?</h3>
             <h5 class="uppercase text-center">Let us know if you have any coding meet-ups coming up, questions and
                 more...</h5>
@@ -53,10 +61,16 @@
     </div>
 
 </section>
-{% endblock %}
+{% for meetup in meetups %}
+{{ meetup.name }}<br>
+{{ meetup.date }}<br>
+{{ meetup.time }}<br>
+{{ meetup.address }}<br>
+{{ meetup.type }}<br>
+{{ meetup.theme }}
 </main>
 
 <footer>
-{% endfor %}
-
+    {% endfor %}
+    {% endblock %}
 </footer>
