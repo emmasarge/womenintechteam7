@@ -56,8 +56,12 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/maps.js') }}"></script>
     <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+     <script>
+        $('#copyright').text(new Date().getFullYear());
+    </script>
     {% block scripts %}
     {% endblock %}
+    
 </body>
 
 </html>
