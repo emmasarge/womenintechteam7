@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" type="text/css" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
     <title>Pedicoders</title>
@@ -16,13 +16,13 @@
 
 <body>
     <header>
-        
+
     </header>
 
     <main>
         {% block content %}
         <section class="page-section" id="landing-into">
-        
+
         </section>
         <section class="page-section" id="meetups">
 
@@ -31,6 +31,7 @@
 
         </section>
         <section class="page-section" id="maps">
+            <div id="map"></div>
 
         </section>
         <section class="page-section" id="profile">
@@ -40,6 +41,28 @@
 
         </section>
         <section class="page-section" id="contact">
+            <div class="container-fluid">
+                  {% with messages = get_flashed_messages() %} 
+            {% if messages %}
+                <ul class="flashes">
+                    {% for message in messages %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            <div>
+                <h3 class="contact-heading uppercase text-center">Do you want to get in touch?</h3>
+                <h5 class="uppercase text-center">Let us know if you have any coding meet-ups coming up, questions and more...</h5>
+            </div>
+            <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <textarea rows="5" name="message" class="form-control" id="message" placeholder="talk to us..." required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                </form>
+            </div>
+        </div>
+            </div>
 
         </section>
         {% endblock %}
@@ -49,19 +72,31 @@
 
     </footer>
 
-<!-- JQuery -->
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/maps.js') }}"></script>
     <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
-     <script>
+
+    <!-- Google maps API-->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvHIy9YprzHj_u2r37CiAalKPhtrirRA0&callback=initMap&libraries=&v=weekly"
+        async></script>
+    <!-- Email JS Api-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_JumqFUNjX2mAUxSBn12rS");
+        })();
+    </script>
+    <script>
         $('#copyright').text(new Date().getFullYear());
     </script>
     {% block scripts %}
     {% endblock %}
-    
+
 </body>
 
 </html>
