@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+
 body {
-    background-color: #f7ecec;
+    background-color: #f58d8d;
+    font-family: 'Montserrat', sans-serif;
 }
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair-Display', serif;
+}
+
 #map {
     height: 100%;
 }
@@ -17,12 +25,11 @@ body {
 
 #head {
     height: 30vh;
-    background-color: yellow;
+    padding: 2rem;
 }
 
 #foot {
     height: 10vh;
-    background-color: yellow;
     text-align: center;
     line-height: 10vh;
 }
