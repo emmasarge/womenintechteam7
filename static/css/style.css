@@ -5,6 +5,13 @@ body {
     background-color: #fdd1d1;
     font-family: 'Montserrat', sans-serif;
 }
+h1 h3 {
+    font-family: 'Prata', serif;
+}
+
+p {
+    font-family: 'Didact Gothic', sans-serif;
+}
 
 h1, h2, h3, h4, h5 {
     font-family: 'Playfair-Display', serif;
@@ -13,14 +20,16 @@ h1, h2, h3, h4, h5 {
 }
 
 
-    background-color: #fafafa;
-    color: black;
-}
 
 section {
-    height: 600px;
+    height: 400px;
+    margin-top: 20px;
 }
-
+#flash-section {
+    height:20px;
+    margin: 0;
+  
+}
 
 #map {
     height: 500px;
@@ -65,6 +74,10 @@ section {
     height: 10vh;
     text-align: center;
     line-height: 10vh;
+    font-size: 10px;
+    margin-top: 90px;
+    text-align: center;
+    
 }
 
 
@@ -110,15 +123,8 @@ section {
 
 #landing-intro h2 {
     text-align: center;
-
-h1,
-h3 {
-    font-family: 'Prata', serif;
 }
 
-p {
-    font-family: 'Didact Gothic', sans-serif;
-}
 
 #meetups {
     margin: auto;
@@ -174,4 +180,5 @@ p {
      padding: 10px 20px 10px 20px;
      border-radius: 0;
      margin-top: 20px;
+     margin-bottom: 200px;
 }
