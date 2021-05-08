@@ -52,25 +52,37 @@
 <section class="page-section container" id="image-carousel-2">
     <h2>A place for images</h2>
 </section>
-<section class="page-section container" id="contact">
-    <div class="container-fluid">
-        <div>
-            <h3 class="contact-heading uppercase text-center">Do you want to get in touch?</h3>
-            <h5 class="uppercase text-center">Let us know if you have any coding meet-ups coming up, questions and
-                more...</h5>
-        </div>
-        <div class="center-form">
-            <form onsubmit="return sendMail(this);">
-                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
-                    required />
-                <textarea rows="5" name="message" class="form-control" id="message" placeholder="talk to us..."
-                    required></textarea>
-                <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
-            </form>
-        </div>
-    </div>
-    </div>
-</section>
 
-{% endblock %}
+<section class="page-section contact-page-form" id="contact">
+        <div class="container">
+            <div class="contact-heading">
+                        <h3>Contact us!</h3>
+                        <p>Let us know if you have any coding-meetups you would like to share, or questions, or ideas of how we can empower
+                            those who identify as women more in the world of code!
+                        </p>
+                    </div>
+                    <div class="contact-form">
+                        <form onsubmit="return sendMail(this);">
+                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name"
+                                required />
+                            <input type="email" name="emailaddress" class="form-control" id="emailaddress"
+                                placeholder="Email" required />
+                            <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary"
+                                placeholder="Tell us what is on your mind with a 'string'..." required></textarea>
+                            <button type="submit" class="btn btn-secondary center-block">Send Message</button>
+                        </form>
+                
+                
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+</section>
+</main>
+
+<footer>
+    
+    {% endblock %}
+</footer>
