@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+
+
 body {
+    background-color: #fdd1d1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair-Display', serif;
+    color: rgb(63, 171, 204);
+    text-align: center;
+}
+
+
     background-color: #fafafa;
     color: black;
 }
@@ -6,6 +20,7 @@ body {
 section {
     height: 600px;
 }
+
 
 #map {
     height: 500px;
@@ -20,6 +35,81 @@ section {
     font-weight: 500;
     text-align: center;
 }
+
+/* base.html */
+
+/* header */
+
+#head {
+    height: 30vh;
+    padding: 1rem 1rem 0 1rem;
+}
+
+#head h1 {
+    font-size: 550%;
+    color: rgb(98,174,197);
+    text-shadow: -1px -1px 0 rgb(247, 19, 88), 1px -1px 0 rgb(247, 19, 88), -1px 1px 0 rgb(230,64,114), 1px 1px 0 rgb(230,64,114);
+}
+
+#head h4 {
+    text-decoration: underline;
+    color: rgb(49, 104, 136);
+}
+
+.nav-link:hover {
+    font-weight: bolder;
+}
+
+/* Footer */
+#foot {
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+}
+
+
+/* home.html */
+
+/* Top image and text */
+
+#photobox {
+    height: 50vh;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.left-text {
+    padding-top: 30px;
+    width: 20%;
+    float: left;
+    margin-top: 12vh;
+}
+
+.right-text {
+    padding-top: 30px;
+    width: 20%;
+    float: right;
+    margin-top: 12vh;
+}
+
+.center-image {
+    width: 60%;
+    margin: 10px auto;
+    height: 50vh;
+}
+
+#one {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#landing-intro {
+    margin-top: 5%;
+}
+
+#landing-intro h2 {
+    text-align: center;
 
 h1,
 h3 {
