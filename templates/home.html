@@ -1,17 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1> test
+<h1> Welcome
 </h1>
-
-{% for meetup in meetups %}
-{{ meetup.name }}<br>
-{{ meetup.description }}<br>
-{{ meetup.date }}<br>
-{{ meetup.time }}<br>
-{{ meetup.address }}<br>
-{{ meetup.type }}<br>
-{{ meetup.theme }}
 
 <section class="page-section" id="landing-intro">
     <div class="container-fluid"></div>
@@ -84,6 +75,6 @@
 </main>
 
 <footer>
-    {% endfor %}
+    
     {% endblock %}
 </footer>

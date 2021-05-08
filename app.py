@@ -81,6 +81,13 @@ def login():
     return render_template("login.html")
 
 
+@app.route("/meetups")
+def meetups():
+    meetups = list(mongo.db.meetups.find())
+    return render_template(
+        "meetups.html", meetups=meetups)
+
+
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
