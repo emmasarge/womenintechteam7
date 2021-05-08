@@ -24,6 +24,17 @@ def home():
     return render_template("home.html")
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    if query:
+        meetups = list(mongo.db.meetups.find({"$text": {"$search": query}}))
+        return render_template(
+            "search_results.html", meetups=meetups)
+    else:
+        return redirect(url_for("home"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
