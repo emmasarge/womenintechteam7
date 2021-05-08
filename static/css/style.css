@@ -23,3 +23,17 @@ h1, h3{
 p{ 
     font-family: 'Didact Gothic', sans-serif;
 }
+
+#meetups {
+    margin: auto;
+    width: 80%;
+}
+
+.center-align h1{
+    text-align: center;
+}
+
+.container-center {
+    margin: auto;
+    width: 80%;
+}
