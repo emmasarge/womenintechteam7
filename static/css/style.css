@@ -5,6 +5,13 @@ body {
     background-color: #fdd1d1;
     font-family: 'Montserrat', sans-serif;
 }
+h1 h3 {
+    font-family: 'Prata', serif;
+}
+
+p {
+    font-family: 'Didact Gothic', sans-serif;
+}
 
 h1, h2, h3, h4, h5 {
     font-family: 'Playfair-Display', serif;
@@ -12,9 +19,26 @@ h1, h2, h3, h4, h5 {
     text-align: center;
 }
 
+
 #map {
     height: 100%;
 }
+
+
+
+section {
+  
+    margin-top: 50px;
+    
+}
+#flash-section {
+    height:20px;
+    margin: 0;
+  
+}
+
+
+
 
 .flashes {
     list-style: none;
@@ -52,6 +76,10 @@ h1, h2, h3, h4, h5 {
     height: 10vh;
     text-align: center;
     line-height: 10vh;
+    font-size: 10px;
+    margin-top: 90px;
+    text-align: center;
+    
 }
 
 
@@ -99,17 +127,131 @@ h1, h2, h3, h4, h5 {
     text-align: center;
 }
 
+
+#meetups {
+    margin: auto;
+    width: 80%;
+}
+
+.center-align h1{
+    text-align: center;
+}
+
 /* first carousel*/
+
 
 #image-carousel-1, #image-carousel-2 {
     height: 80vh;
     padding: 2%;
 }
 
+
+/*-----MAP SECTION-----*/
+#map {
+    height:100%;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid black;
+    position: absolute;
+    overflow: visible;
+}
+#maps {
+    background-color: #fafafa;
+    padding:50px;
+    overflow: scroll;
+    
+}
+#maps p {
+    font-family: 'Didact Gothic', sans-serif;
+     margin-left: 30px;
+}
+#maps h2 {
+     font-family: 'Prata', serif;
+     color: black;
+     letter-spacing: 3px;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+}
+#maps h3 {
+     font-family: 'Prata', serif;
+     color: black;
+     text-align: left;
+     font-size: 18px;
+     margin-bottom: 20px;
+     margin-left: 30px;
+}
+/*---- CONTACT SECTION ---*/
+#contact {
+    text-align: center;
+}
+.contact-heading {
+    width: 90%;
+    margin:0 auto;
+    display: block;
+
+}
+.contact-heading h1 {
+     font-family: 'Prata', serif;
+     color: black;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     margin-bottom: 15px;
+}
+.contact-heading p {
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+   
+   
+}
+.contact-form input {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    padding: 7px 0px 7px 0px;
+    border: 1px solid #0d1922;
+    border-radius: 0;
+}
+.contact-form ::-webkit-input-placeholder {
+   font-family: 'Didact Gothic', sans-serif;
+   color: black;
+    font-size: 18px;
+    padding-left: 10px; 
+
+
 .carousel-inner  {
     height: 100%;
 }
 
+
 #carouselExampleIndicators {
     height: 100%;
+
+.contact-form textarea {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #0d1922;
+    border-radius: 0;
+}
+.contact-form button {
+    background-color: #c3546a;
+    border: none;
+     font-family: 'Prata', serif;
+     font-size: 24px;
+     letter-spacing: 1px;
+     padding: 15px 30px 15px 30px;
+     border-radius: 0;
+     margin-top: 30px;
+     margin-bottom: 200px;
+}
+.contact-form button:hover{
+  padding-right: 25px;
+  color: #0d1922;
+  background-color: #fafafa;
+  border: 1px solid #0d1922;
 }

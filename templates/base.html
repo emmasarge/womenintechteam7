@@ -8,7 +8,7 @@
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
+
     <!--Bootstrap CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -28,42 +28,46 @@
 
 <body>
     <header>
-        <div id="head" class="container">
-            <h1>Pedicoders</h1>
-            <h4>I got 99 problems but a bug ain't one</h3>
-        </div>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
-                <!--<a class="navbar-brand" href="#">Navbar</a> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Pedicoders</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#landing-intro">About<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{ url_for('home') }}">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#meetups-calendar">Meet-ups</a>
+                            <a class="nav-link" href="{{ url_for('meetups') }}">Meet-ups</a>
+                        </li>
+                        {% if session.user %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('add_event') }}">Add Event</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#maps">Locations</a>
+                            <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#meetups-calendar">Calendar</a>
+                            <a class="nav-link" href="{{ url_for('register') }}">Register</a>
                         </li>
+                        {% endif %}
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
-            </nav>
+        </nav>
         </div>
-
     </header>
 
-    <section>
+    <section id ="flash-section">
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -77,101 +81,12 @@
     </section>
 
     <main>
+        <h3>I got 99 problems but a bug ain't one</h3>
         {% block content %}
-
-
-        <!-- all on home.html -->
-        <!-- <section class="page-section" id="landing-intro">
-</section>
-<section class="page-section" id="profile/registration">
-</section>
-<section class="page-section" id="meetups-calendar">
-</section>
-<section class="page-section" id="image-carousel-1">
-</section>
-<section class="page-section" id="maps">
-    <div id="map"></div>
-</section>
-<section class="page-section" id="image-carousel-2">
-</section>
-<section class="page-section" id="contact">
-    <div class="container-fluid">
-        <div>
-            <h3 class="contact-heading uppercase text-center">Do you want to get in touch?</h3>
-            <h5 class="uppercase text-center">Let us know if you have any coding meet-ups coming up, questions and
-                more...</h5>
-        </div>
-        <div class="center-form">
-            <form onsubmit="return sendMail(this);">
-                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
-                    required />
-                <textarea rows="5" name="message" class="form-control" id="message" placeholder="talk to us..."
-                    required></textarea>
-                <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
-            </form>
-        </div>
-    </div>
-    </div>
-</section>--->
-
-
-        <!-- all on home.html -->
-
-        <!--BODY 
-       <section class="page-section" id="landing-intro">
-
-        </section>
-        <section class="page-section" id="profile/registration">
-
-        </section>
-        <section class="page-section" id="meetups-calendar">
-
-        </section>
-        <section class="page-section" id="image-carousel-1">
-
-        </section>
-        <section class="page-section" id="maps">
-            <div id="map"></div>
-
-        </section>
-
-        <section class="page-section" id="image-carousel-2">
-
-        </section>
-        <section class="page-section" id="contact">
-            <div class="container-fluid">
-                <div>
-                    <h3 class="contact-heading uppercase text-center">Do you want to get in touch?</h3>
-                    <h5 class="uppercase text-center">Let us know if you have any coding meet-ups coming up, questions
-                        and
-                        more...</h5>
-                </div>
-                <div class="center-form">
-                    <form onsubmit="return sendMail(this);">
-                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-                        <input type="text" name="emailaddress" class="form-control" id="emailaddress"
-                            placeholder="Email" required />
-                        <textarea rows="5" name="message" class="form-control" id="message" placeholder="talk to us..."
-                            required></textarea>
-                        <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
-                    </form>
-                </div>
-            </div>
-            </div>
-
-        </section> 
-
         {% endblock %}
     </main>
 
-    <footer>
-        <div class="container" id="foot">
-            <p>Copyright Coding Queens | W.I.T. Hackathon 2021</p>
-        </div>
-    </footer>
-
-    <!- JQuery -->
+    <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <!---Bootstrap JQuery -->
