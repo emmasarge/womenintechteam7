@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1> List of meetups</h1>
+
+<div class="accordion" id="accordionExample">
+    {% for meetup in meetups %}
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcc" aria-expanded="true" aria-controls="collapseAcc">
+        {{ meetup.name }}
+        <span>Theme: {{ meetup.theme }}</span>
+      </button>
+    </h2>
+    <div id="collapseAcc" class="accordion-collapse collapse show" aria-labelledby="heading" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>When: {{ meetup.date }} at {{ meetup.time }}
+        </strong> {{ meetup.description }}
+        <p>Where: {{ meetup.address }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+{% endblock %}
