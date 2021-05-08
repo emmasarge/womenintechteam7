@@ -20,6 +20,11 @@ h1, h2, h3, h4, h5 {
 }
 
 
+#map {
+    height: 100%;
+}
+
+
 
 section {
   
@@ -31,6 +36,7 @@ section {
     margin: 0;
   
 }
+
 
 
 
@@ -131,10 +137,12 @@ section {
     text-align: center;
 }
 
-.container-center {
-    margin: auto;
-    width: 80%;
-    font-size: 18px;
+/* first carousel*/
+
+
+#image-carousel-1, #image-carousel-2 {
+    height: 80vh;
+    padding: 2%;
 }
 
 
@@ -213,7 +221,14 @@ section {
     font-size: 18px;
     padding-left: 10px; 
 
+
+.carousel-inner  {
+    height: 100%;
 }
+
+
+#carouselExampleIndicators {
+    height: 100%;
 
 .contact-form textarea {
     width: 90%;
@@ -239,5 +254,4 @@ section {
   color: #0d1922;
   background-color: #fafafa;
   border: 1px solid #0d1922;
-
 }
