@@ -220,15 +220,16 @@ section {
    color: black;
     font-size: 18px;
     padding-left: 10px; 
+}
 
-
-.carousel-inner  {
+.carousel-inner {
     height: 100%;
 }
 
 
 #carouselExampleIndicators {
     height: 100%;
+}
 
 .contact-form textarea {
     width: 90%;
