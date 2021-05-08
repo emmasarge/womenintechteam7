@@ -24,27 +24,18 @@ h5 {
     text-align: center;
 }
 
-
 #map {
     height: 100%;
 }
 
-
-
 section {
-
     margin-top: 50px;
-
 }
 
 #flash-section {
     height: 20px;
     margin: 0;
-
 }
-
-
-
 
 .flashes {
     list-style: none;
@@ -59,22 +50,39 @@ section {
 
 #head {
     height: 30vh;
-    padding: 1rem 1rem 0 1rem;
+    margin: 1rem 1rem 0 1rem;
 }
 
-#head h1 {
-    font-size: 550%;
-    color: rgb(98, 174, 197);
-    text-shadow: -1px -1px 0 rgb(247, 19, 88), 1px -1px 0 rgb(247, 19, 88), -1px 1px 0 rgb(230, 64, 114), 1px 1px 0 rgb(230, 64, 114);
+#top-background {
+    background-color: rgb(226, 80, 80);
 }
 
-#head h4 {
-    text-decoration: underline;
-    color: rgb(49, 104, 136);
+/* Title logo - hover*/
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: rgb(148, 204, 13);
+} 
+
+/* Title logo */
+.navbar-light .navbar-brand {
+    color: rgb(148, 204, 13);
+    font-size: 300%;
+}
+
+/* problems tagline */
+.navbar-light .navbar-brand #tagline {
+    font-size: 35%;
+    color: blue;
+    font-style: italic;
 }
 
 .nav-link:hover {
     font-weight: bolder;
+}
+
+/* menu links */
+#navbarNav a {
+    color: magenta;
 }
 
 /* Footer */
