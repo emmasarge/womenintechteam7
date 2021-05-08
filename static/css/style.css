@@ -245,3 +245,9 @@ section {
   border: 1px solid #0d1922;
 
 }
+
+/*---IMAGE CAROUSELS---*/
+#image-carousel-1{
+    background-color: #fafafa;
+    height:600px
+}
