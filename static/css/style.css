@@ -34,11 +34,11 @@ p {
 #contact {
     text-align: center;
 }
-.contact-heading {
+.contact-heading p {
     text-align: center;
-    margin: 20px 60px 30px 60px;
-    padding-right: 20px;
-    padding-left: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+   
    
 }
 .contact-form input {
