@@ -22,8 +22,8 @@ h1, h2, h3, h4, h5 {
 
 
 section {
-    height: 400px;
-    margin-top: 20px;
+  
+    margin-top: 50px;
     
 }
 #flash-section {
@@ -140,17 +140,23 @@ section {
 
 /*-----MAP SECTION-----*/
 #map {
-    height: 300px;
-    width: 600px;
+    height:100%;
+    width: 90%;
     margin: 0 auto;
     display: block;
+    border: 1px solid black;
+    position: absolute;
+    overflow: visible;
 }
 #maps {
     background-color: #fafafa;
-    padding:30px;
+    padding:50px;
+    overflow: scroll;
+    
 }
 #maps p {
     font-family: 'Didact Gothic', sans-serif;
+     margin-left: 30px;
 }
 #maps h2 {
      font-family: 'Prata', serif;
@@ -163,38 +169,59 @@ section {
      font-family: 'Prata', serif;
      color: black;
      text-align: left;
+     font-size: 18px;
      margin-bottom: 20px;
+     margin-left: 30px;
 }
 /*---- CONTACT SECTION ---*/
 #contact {
     text-align: center;
 }
+.contact-heading {
+    width: 90%;
+    margin:0 auto;
+    display: block;
+
+}
+.contact-heading h1 {
+     font-family: 'Prata', serif;
+     color: black;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     margin-bottom: 15px;
+}
 .contact-heading p {
     text-align: center;
-    margin-right: 60px;
-    margin-left: 60px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
    
    
 }
 .contact-form input {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: block;
     margin-bottom: 10px;
     padding: 7px 0px 7px 0px;
+    border: 1px solid #0d1922;
+    border-radius: 0;
 }
 .contact-form ::-webkit-input-placeholder {
    font-family: 'Didact Gothic', sans-serif;
+   color: black;
     font-size: 18px;
     padding-left: 10px; 
 
 }
 
 .contact-form textarea {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: block;
     margin-bottom: 10px;
+    border: 1px solid #0d1922;
+    border-radius: 0;
 }
 .contact-form button {
     background-color: #c3546a;
@@ -202,8 +229,15 @@ section {
      font-family: 'Prata', serif;
      font-size: 24px;
      letter-spacing: 1px;
-     padding: 10px 20px 10px 20px;
+     padding: 15px 30px 15px 30px;
      border-radius: 0;
-     margin-top: 20px;
+     margin-top: 30px;
      margin-bottom: 200px;
+}
+.contact-form button:hover{
+  padding-right: 25px;
+  color: #0d1922;
+  background-color: #fafafa;
+  border: 1px solid #0d1922;
+
 }
