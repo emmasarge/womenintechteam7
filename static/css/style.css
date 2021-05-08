@@ -1,26 +1,32 @@
 body {
     background-color: #fafafa;
-    color:black;
+    color: black;
 }
+
 section {
     height: 600px;
 }
+
 #map {
     height: 500px;
     width: 800px;
     margin: 0 auto;
     display: block;
 }
+
 .flashes {
     list-style: none;
     color: black;
     font-weight: 500;
     text-align: center;
 }
-h1, h3{
+
+h1,
+h3 {
     font-family: 'Prata', serif;
 }
-p{ 
+
+p {
     font-family: 'Didact Gothic', sans-serif;
 }
 
@@ -36,4 +42,46 @@ p{
 .container-center {
     margin: auto;
     width: 80%;
+    font-size: 18px;
+}
+
+#contact {
+    text-align: center;
+}
+.contact-heading p {
+    text-align: center;
+    margin-right: 60px;
+    margin-left: 60px;
+   
+   
+}
+.contact-form input {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    padding: 7px 0px 7px 0px;
+}
+.contact-form ::-webkit-input-placeholder {
+   font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    padding-left: 10px; 
+
+}
+
+.contact-form textarea {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.contact-form button {
+    background-color: #c3546a;
+    border: none;
+     font-family: 'Prata', serif;
+     font-size: 24px;
+     letter-spacing: 1px;
+     padding: 10px 20px 10px 20px;
+     border-radius: 0;
+     margin-top: 20px;
 }
