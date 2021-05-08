@@ -139,6 +139,10 @@ section {
     width: 80%;
 }
 
+#headingOne h3 {
+    text-align: left;
+}
+
 .center-align h1 {
     text-align: center;
 }
@@ -165,25 +169,15 @@ section {
 
 #maps {
     background-color: #fafafa;
-<<<<<<< HEAD
-    padding:50px;
-   
-    
-=======
     padding: 50px;
     overflow: scroll;
 
->>>>>>> 828761738a4e5a7a20d131ccdca540a48083c3d7
 }
 
 #maps p {
     font-family: 'Didact Gothic', sans-serif;
-<<<<<<< HEAD
      margin-left: 30px;
      margin-bottom: 10px;
-=======
-    margin-left: 30px;
->>>>>>> 828761738a4e5a7a20d131ccdca540a48083c3d7
 }
 
 #maps h2 {
@@ -202,13 +196,10 @@ section {
     margin-bottom: 20px;
     margin-left: 30px;
 }
-<<<<<<< HEAD
 .meeting-text {
     margin-bottom: 30px;
 }
-=======
 
->>>>>>> 828761738a4e5a7a20d131ccdca540a48083c3d7
 /*---- CONTACT SECTION ---*/
 #contact {
     text-align: center;
@@ -285,7 +276,6 @@ section {
     margin-bottom: 200px;
 }
 
-<<<<<<< HEAD
 }
 
 /*---IMAGE CAROUSELS---*/
@@ -293,11 +283,9 @@ section {
     background-color: #fafafa;
     height:600px
 }
-=======
 .contact-form button:hover {
     padding-right: 25px;
     color: #0d1922;
     background-color: #fafafa;
     border: 1px solid #0d1922;
 }
->>>>>>> 828761738a4e5a7a20d131ccdca540a48083c3d7
