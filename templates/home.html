@@ -27,9 +27,12 @@
         professional, we want to hear from you all.
     </p>
 </section>
-<!-- <section class="page-section" id="profile/registration">
-</section> -->
-<section class="page-section container" id="meetups-calendar">
+
+<section class="page-section" id="profile/registration">
+</section>
+
+<!--calendar and meetups section-->
+<section class="page-section container">
     <h2>Meetups</h2>
     <p>
         Women who code together grow together, so here's a list of upcoming meet-ups!<br>
@@ -41,6 +44,17 @@
     <p>The calendar shows the meet-ups happening soon! Don't see any, or don't have a day that suits?<br>
         Feel free to pop us a message on our <a href="#contact">contact us form</a> page to suggest an event near you
         at a time that suits!</p>
+
+    
+    <div id="calendar">   
+        <script>
+            let calendarEl = document.getElementById ('calendar');
+            //instantiate an object of calendar 
+            let calendar = new FullCalendar.Calendar (calendarEl, {                            
+            });
+            calendar.render();
+        </script>
+    </div>  
 </section>
 
 <section class="page-section container" id="image-carousel-1">
@@ -76,6 +90,7 @@
         </a>
     </div>
 </section>
+
 <section class="page-section container-fluid" id="maps">
     <h2>Coding Meets</h2>
     <div class="row">
@@ -92,14 +107,14 @@
                 </p>
             </div>
         </div>
-            <div class="col-md-6 section-column">
-                <div id="map">
-                </div>
+        <div class="col-md-6 section-column">
+            <div id="map">
             </div>
+        </div>
 
 
 
-        
+
     </div>
     </div>
 </section>
@@ -156,14 +171,10 @@
                     placeholder="Tell us what is on your mind with a 'string'..." required></textarea>
                 <button type="submit" class="btn btn-secondary center-block">Send Message</button>
             </form>
-
-
         </div>
-
     </div>
     </div>
     </div>
-
 </section>
 </main>
 
