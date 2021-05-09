@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: #fdd1d1;
+    background-color: #fafafa;
     font-family: 'Didact Gothic', sans-serif;
     font-size: 125%;
 }
@@ -13,7 +13,7 @@ h3,
 h4,
 h5 {
     font-family: 'Prata', serif;
-    color: rgb(63, 171, 204);
+    color: black;
     text-align: center;
     font-size: 200%;
     margin-bottom: 5px;
@@ -25,7 +25,7 @@ section {
 #flash-section {
     height: 20px;
     margin: 0;
-    background-color: #fdd1d1;
+    background-color: #fafafa;
 }
 
 .flashes {
