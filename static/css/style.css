@@ -158,8 +158,20 @@ section {
     text-align: left;
 }
 
+.template-heading h1 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
 .center-align h1 {
-    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 /* first carousel*/
