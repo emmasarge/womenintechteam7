@@ -16,7 +16,7 @@ h3,
 h4,
 h5 {
     font-family: 'Playfair-Display', serif;
-    color: rgb(0, 182, 173);
+    color: rgb(88, 136, 76);
     text-align: center;
     font-size: 200%;
 }
@@ -43,7 +43,7 @@ section {
     margin: 1rem 1rem 0 1rem;
 }
 #top-background {
-    background-color: rgb(226, 80, 80);
+    background-color: rgb(255, 249, 245);
 }
 .navbar {
     margin: 0;
@@ -72,7 +72,7 @@ section {
 }
 /* menu links */
 #navbarNav a {
-    color: magenta;
+    color: rgb(195,	84,	106);
     font-size: 110%;
 }
 /* Footer */
@@ -89,7 +89,7 @@ section {
 #photobox {
     height: 50vh;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 .left-text {
     padding-top: 30px;
@@ -104,9 +104,9 @@ section {
     margin-top: 12vh;
 }
 .center-image {
-    width: 60%;
+    width: 40%;
     margin: 10px auto;
-    height: 50vh;
+    height: 60vh;
 }
 #one {
     height: 100%;

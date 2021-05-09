@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="contact-page">
+<h1>Contact us</h1>
+
+<div class="container">
+    <div class="contact-heading">
+        <p>Let us know if you have any coding-meetups you would like to share, or questions, or ideas of how we can
+            empower
+            those who identify as women more in the world of code!
+        </p>
+    </div>
+    <div class="contact-form">
+        <form onsubmit="return sendMail(this);">
+            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+            <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
+                required />
+            <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary"
+                placeholder="Tell us what is on your mind with a 'string'..." required></textarea>
+            <button type="submit" class="btn btn-secondary center-block">Send Message</button>
+        </form>
+
+
+    </div>
+    </div>
+    <footer id="copyright">
+
+    </footer>
+    {% endblock %}x
