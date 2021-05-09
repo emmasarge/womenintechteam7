@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="container container-center">
+
+    <h2>Add an Event</h2>
+
+    <form method="POST" action="{{ url_for('add_event') }}">
+        <div class="mb-3">
+            <label for="event_name" class="form-label">Event name</label>
+            <input type="text" name="event_name" class="form-control" id="event_name" minlength="5" maxlength="50">
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea type="text" name="description" class="form-control" id="description"></textarea>
+        </div>
+        <!-- <div class="input-group date" data-provide="datepicker">
+            <input type="text" class="form-control">
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+        </div> -->
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" name="address" class="form-control" id="address">
+        </div>
+        <div class="mb-3">
+            <label for="city" class="form-label">City</label>
+            <input type="text" name="city" class="form-control" id="city">
+        </div>
+        <div class="mb-3">
+        <select class="form-select form-select-lg" name="type" aria-label="form-select-lg">
+            <option selected>Pick a meet-up type</option>
+            {% for type in types %}
+                <option value="{{ type.meeting_type }}">{{ type.meetup_type }}</option>
+            {% endfor %}x
+        </select>
+        <select class="form-select form-select-lg" name="topic" aria-label="form-select-lg">
+            <option selected>Pick a theme</option>
+            {% for topic in topics %}
+                <option value="{{ topic.topic }}">{{ topic.topic }}</option>
+            {% endfor %}x
+        </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
+
+{% endblock %}

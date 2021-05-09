@@ -35,27 +35,45 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Pedicoders</a>
+                <a class="navbar-brand" href="{{ url_for('home') }}">Pedicoders</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <form action="{{ url_for('search') }}" method="post">
+                                    <div class="input-field">
+                                        <input id="query" name="query" type="search" required>
+                                        <label class="label-icon" for="query"><i
+                                                class="fas fa-search right"></i></label>
+                                    </div>
+                                </form>
+                        </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#landing-intro">About<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{ url_for('home') }}">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#meetups-calendar">Meet-ups</a>
+                            <a class="nav-link" href="{{ url_for('meetups') }}">Meet-ups</a>
+                        </li>
+                        {% if session.user %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('add_event') }}">Add Event</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#maps">Locations</a>
+                            <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#meetups-calendar">Calendar</a>
+                            <a class="nav-link" href="{{ url_for('register') }}">Register</a>
                         </li>
+                        {% endif %}
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
                         </li>
                     </ul>
                 </div>

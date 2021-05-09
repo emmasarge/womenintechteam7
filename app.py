@@ -24,6 +24,17 @@ def home():
     return render_template("home.html")
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    if query:
+        meetups = list(mongo.db.meetups.find({"$text": {"$search": query}}))
+        return render_template(
+            "search_results.html", meetups=meetups)
+    else:
+        return redirect(url_for("home"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -81,11 +92,48 @@ def login():
     return render_template("login.html")
 
 
+@app.route("/logout")
+def logout():
+    # remove user from session cookie
+    flash("You have been logged out")
+    session.pop("user")
+    return redirect(url_for("login"))
+
+
 @app.route("/meetups")
 def meetups():
     meetups = list(mongo.db.meetups.find())
     return render_template(
         "meetups.html", meetups=meetups)
+
+
+@app.route("/add_event/", methods=["GET", "POST"])
+def add_event():
+    if "user" in session:
+        if request.method == "POST":
+            event = {
+                "name": request.form.get("event_name").lower(),
+                "description": request.form.get("description"),
+                "meetup_type": request.form.get("type"),
+                "city": request.form.get("city"),
+                "address": request.form.get("address"),
+                "date": request.form.get("date"),
+                "time": request.form.get("time"),
+                "topic": request.form.get("topic"),
+                "added_by": session["user"]
+                }
+            mongo.db.meetups.insert_one(event)
+
+            flash(
+                "Your Event Was Successfully Created and Added to the Calendar!")
+            return render_template("home.html")
+
+        types = list(mongo.db.meetup_types.find().sort("meetup_type", 1))
+        topics = list(mongo.db.topics.find().sort("topic", 1))
+        return render_template(
+            "add_event.html", types=types, topics=topics)
+    return render_template("unauthorised_error.html")
+
 
 
 @app.route("/contact", methods=["GET", "POST"])

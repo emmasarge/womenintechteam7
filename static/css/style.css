@@ -5,6 +5,7 @@ body {
     background-color: #fdd1d1;
     font-family: 'Montserrat', sans-serif;
 }
+
 h1 h3 {
     font-family: 'Prata', serif;
 }
@@ -13,29 +14,27 @@ p {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Playfair-Display', serif;
     color: rgb(63, 171, 204);
     text-align: center;
 }
 
-
+#map {
+    height: 100%;
+}
 
 section {
-    height: 400px;
-    margin-top: 20px;
-}
-#flash-section {
-    height:20px;
-    margin: 0;
-  
+    margin-top: 50px;
 }
 
-#map {
-    height: 500px;
-    width: 800px;
-    margin: 0 auto;
-    display: block;
+#flash-section {
+    height: 20px;
+    margin: 0;
 }
 
 .flashes {
@@ -56,8 +55,8 @@ section {
 
 #head h1 {
     font-size: 550%;
-    color: rgb(98,174,197);
-    text-shadow: -1px -1px 0 rgb(247, 19, 88), 1px -1px 0 rgb(247, 19, 88), -1px 1px 0 rgb(230,64,114), 1px 1px 0 rgb(230,64,114);
+    color: rgb(98, 174, 197);
+    text-shadow: -1px -1px 0 rgb(247, 19, 88), 1px -1px 0 rgb(247, 19, 88), -1px 1px 0 rgb(230, 64, 114), 1px 1px 0 rgb(230, 64, 114);
 }
 
 #head h4 {
@@ -77,9 +76,7 @@ section {
     font-size: 10px;
     margin-top: 90px;
     text-align: center;
-    
 }
-
 
 /* home.html */
 
@@ -125,60 +122,166 @@ section {
     text-align: center;
 }
 
-
 #meetups-calendar {
+   margin: auto;
+    width: 80%;
+}
+
+#meetups {
     margin: auto;
     width: 80%;
 }
 
-.center-align h1{
+#headingOne h2 {
+    text-align: left;
+}
+
+.center-align h1 {
     text-align: center;
 }
 
-.container-center {
-    margin: auto;
-    width: 80%;
-    font-size: 18px;
+/* first carousel*/
+
+#image-carousel-1,
+#image-carousel-2 {
+    height: 80vh;
+    padding: 2%;
 }
 
+/*-----MAP SECTION-----*/
+#map {
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 20px;
+    margin-top:10px;
+   
+    
+}
+
+#maps {
+    background-color: #fafafa;
+    padding:50px;
+    overflow: scroll;
+}
+
+#maps p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+     margin-left: 30px;
+    
+     margin-bottom: 10px;
+
+}
+
+#maps h2 {
+    font-family: 'Prata', serif;
+    color: black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#maps h3 {
+    font-family: 'Prata', serif;
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding-top: 30px;
+}
+.meeting-text {
+    margin-bottom: 30px;
+}
+
+/*---- CONTACT SECTION ---*/
 #contact {
     text-align: center;
+    background-color: #fafafa;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
+
+.contact-heading {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.contact-heading h1 {
+    font-family: 'Prata', serif;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
 .contact-heading p {
     text-align: center;
-    margin-right: 60px;
-    margin-left: 60px;
-   
-   
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
+
 .contact-form input {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: block;
     margin-bottom: 10px;
     padding: 7px 0px 7px 0px;
+    border: 1px solid #372b33;
+    border-radius: 0;
 }
-.contact-form ::-webkit-input-placeholder {
-   font-family: 'Didact Gothic', sans-serif;
-    font-size: 18px;
-    padding-left: 10px; 
 
+.contact-form ::-webkit-input-placeholder {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #372b33;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+
+#carouselExampleIndicators {
+    height: 100%;
 }
 
 .contact-form textarea {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
+    border: 1px solid #372b33;
+    border-radius: 0;
 }
+
 .contact-form button {
-    background-color: #c3546a;
+    background-color: #48b78f;
     border: none;
-     font-family: 'Prata', serif;
-     font-size: 24px;
-     letter-spacing: 1px;
-     padding: 10px 20px 10px 20px;
-     border-radius: 0;
-     margin-top: 20px;
-     margin-bottom: 200px;
+    font-family: 'Prata', serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 0;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.contact-form button:hover {
+    padding-right: 25px;
+    color: #372b33;
+    background-color: #fafafa;
+    border: 1px solid #372b33;
+}
+
+/*---IMAGE CAROUSELS---*/
+#image-carousel-1{
+    background-color: #fafafa;
+    height:600px
 }
