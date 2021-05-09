@@ -340,3 +340,23 @@ section {
     background-color: #fafafa;
     height:600px
 }
+
+/* search in navbar */
+.input-field input[type=search] {
+    border: 1px solid #FFF5EB;
+    margin-top: 8px;
+    border-radius: 5%;
+}
+
+.input-field i {
+    color: #fafafa;
+}
+
+input[type="search"]:focus {
+    top: 0;
+    left: 0;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    outline: none;
+}
