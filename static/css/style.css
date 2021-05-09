@@ -163,6 +163,7 @@ section {
     width: 90%;
     border: 1px solid black;
     position: relative;
+    overflow: visible;
    
     
 }
