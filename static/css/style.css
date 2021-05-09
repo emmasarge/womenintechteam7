@@ -3,24 +3,17 @@
 
 body {
     background-color: #fdd1d1;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     font-size: 120%;
 }
 
-h1 h3 {
-    font-family: 'Prata', serif;
-}
-
-p {
-    font-family: 'Didact Gothic', sans-serif;
-}
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-    font-family: 'Playfair-Display', serif;
+    font-family: 'Prata', serif;
     color: rgb(63, 171, 204);
     text-align: center;
     font-size: 200%;
