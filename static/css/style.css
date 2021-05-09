@@ -159,11 +159,12 @@ section {
 
 /*-----MAP SECTION-----*/
 #map {
-    height: 100%;
-    width: 90%;
+    height: 300px;
     border: 1px solid black;
     position: relative;
     overflow: visible;
+    margin-bottom: 20px;
+    margin-top:10px;
    
     
 }
@@ -177,8 +178,11 @@ section {
 
 #maps p {
     font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
      margin-left: 30px;
+    
      margin-bottom: 10px;
+
 }
 
 #maps h2 {
@@ -196,6 +200,7 @@ section {
     font-size: 18px;
     margin-bottom: 20px;
     margin-left: 30px;
+    padding-top: 30px;
 }
 .meeting-text {
     margin-bottom: 30px;
