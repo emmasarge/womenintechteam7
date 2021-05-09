@@ -145,10 +145,14 @@ section {
 
 /*-----MAP SECTION-----*/
 #map {
-    height: 100%;
-    width: 90%;
+    height: 300px;
     border: 1px solid black;
     position: relative;
+    overflow: visible;
+    margin-bottom: 20px;
+    margin-top:10px;
+   
+    
 }
 
 #maps {
@@ -159,8 +163,11 @@ section {
 
 #maps p {
     font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
      margin-left: 30px;
+    
      margin-bottom: 10px;
+
 }
 
 #maps h2 {
@@ -178,6 +185,7 @@ section {
     font-size: 18px;
     margin-bottom: 20px;
     margin-left: 30px;
+    padding-top: 30px;
 }
 .meeting-text {
     margin-bottom: 30px;
@@ -186,6 +194,9 @@ section {
 /*---- CONTACT SECTION ---*/
 #contact {
     text-align: center;
+    background-color: #fafafa;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .contact-heading {
@@ -215,13 +226,13 @@ section {
     display: block;
     margin-bottom: 10px;
     padding: 7px 0px 7px 0px;
-    border: 1px solid #0d1922;
+    border: 1px solid #372b33;
     border-radius: 0;
 }
 
 .contact-form ::-webkit-input-placeholder {
     font-family: 'Didact Gothic', sans-serif;
-    color: black;
+    color: #372b33;
     font-size: 18px;
     padding-left: 10px;
 }
@@ -239,13 +250,13 @@ section {
     width: 90%;
     margin: 0 auto;
     display: block;
-    margin-bottom: 10px;
-    border: 1px solid #0d1922;
+    margin-bottom: 60px;
+    border: 1px solid #372b33;
     border-radius: 0;
 }
 
 .contact-form button {
-    background-color: #c3546a;
+    background-color: #48b78f;
     border: none;
     font-family: 'Prata', serif;
     font-size: 24px;
@@ -259,9 +270,9 @@ section {
 }
 .contact-form button:hover {
     padding-right: 25px;
-    color: #0d1922;
+    color: #372b33;
     background-color: #fafafa;
-    border: 1px solid #0d1922;
+    border: 1px solid #372b33;
 }
 
 /*---IMAGE CAROUSELS---*/
