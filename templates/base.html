@@ -34,9 +34,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
-                    <div class="container-fluid" id="top-background">
+            <div class="container-fluid" id="top-background">
                 <a class="navbar-brand" href="{{ url_for('home') }}">Pedicoders</a>
-              
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -96,13 +96,12 @@
     </section>
 
     <main>
-       
+
         {% block content %}
         {% endblock %}
     </main>
 
     <!-- JQuery -->
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!---Bootstrap JQuery -->
@@ -117,16 +116,13 @@
     </script>
     <!-- Compiled and minified JavaScript -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-        <script src = "{{ url_for('static', filename='js/maps.js') }}" >
-    </script>
+    <script src="{{ url_for('static', filename='js/maps.js') }}"></script>
     <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
 
     <!-- Google maps API-->
-   <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfK8TGEnIlJbe8xGn6WRT-UzAQ9HF1vYE&callback=initMap&libraries=&v=weekly"
-      async></script>
-
-
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfK8TGEnIlJbe8xGn6WRT-UzAQ9HF1vYE&callback=initMap&libraries=&v=weekly"
+        async></script>
 
 
     <!-- Email JS Api-->
@@ -136,7 +132,7 @@
             emailjs.init("user_JumqFUNjX2mAUxSBn12rS");
         })();
     </script>
-    
+
     {% block scripts %}
     {% endblock %}
 
