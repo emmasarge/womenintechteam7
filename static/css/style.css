@@ -4,9 +4,8 @@
 body {
     background-color: #fdd1d1;
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 120%;
+    font-size: 125%;
 }
-
 
 h1,
 h2,
@@ -17,6 +16,7 @@ h5 {
     color: rgb(63, 171, 204);
     text-align: center;
     font-size: 200%;
+    margin-bottom: 5px;
 }
 
 #map {
