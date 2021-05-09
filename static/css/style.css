@@ -279,7 +279,28 @@ section {
     background-color: #fafafa;
     border: 1px solid #372b33;
 }
+/*----CONTACT.HTML--------*/
 
+#contact-page {
+    background-color: #fafafa;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+#contact-page h1 {
+
+   font-family: 'Prata', serif;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+
+}
+ #contact-page p {
+     text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+ }
 /*---IMAGE CAROUSELS---*/
 #image-carousel-1{
     background-color: #fafafa;
