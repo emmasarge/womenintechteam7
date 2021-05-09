@@ -2,9 +2,9 @@
 {% block content %}
 
 
-<div class="container container-center">
+<div class="container container-center template-form">
 
-    <h2>Add an Event</h2>
+    <h1>Add an Event</h1>
 
     <form method="POST" action="{{ url_for('add_event') }}">
         <div class="mb-3">
@@ -15,12 +15,17 @@
             <label for="description" class="form-label">Description</label>
             <textarea type="text" name="description" class="form-control" id="description"></textarea>
         </div>
-        <!-- <div class="input-group date" data-provide="datepicker">
-            <input type="text" class="form-control">
+        <div class="row">
+        <div class="col-sm-6 input-group date mb-3" data-provide="datepicker">
+            <input type="date" name="date" class="form-control">
             <div class="input-group-addon">
                 <span class="glyphicon glyphicon-th"></span>
             </div>
-        </div> -->
+            <div class="col-sm-6 input-group mb-3">
+            <input type="time" id="time" name="time" min="09:00" max="21:00" required>
+            </div>
+        </div>
+        </div>
         <div class="mb-3">
             <label for="address" class="form-label">Address</label>
             <input type="text" name="address" class="form-control" id="address">
@@ -30,18 +35,18 @@
             <input type="text" name="city" class="form-control" id="city">
         </div>
         <div class="mb-3">
-        <select class="form-select form-select-lg" name="type" aria-label="form-select-lg">
-            <option selected>Pick a meet-up type</option>
-            {% for type in types %}
+            <select class="form-select form-select-lg" name="type" aria-label="form-select-lg">
+                <option selected>Pick a meet-up type</option>
+                {% for type in types %}
                 <option value="{{ type.meeting_type }}">{{ type.meetup_type }}</option>
-            {% endfor %}x
-        </select>
-        <select class="form-select form-select-lg" name="topic" aria-label="form-select-lg">
-            <option selected>Pick a theme</option>
-            {% for topic in topics %}
+                {% endfor %}x
+            </select>
+            <select class="form-select form-select-lg" name="topic" aria-label="form-select-lg">
+                <option selected>Pick a theme</option>
+                {% for topic in topics %}
                 <option value="{{ topic.topic }}">{{ topic.topic }}</option>
-            {% endfor %}x
-        </select>
+                {% endfor %}x
+            </select>
         </div>
         <button type="submit" class="btn btn-primary">Register</button>
     </form>

@@ -2,16 +2,9 @@
 
 
 body {
-    background-color: #fdd1d1;
-    font-family: 'Montserrat', sans-serif;
-}
-
-h1 h3 {
-    font-family: 'Prata', serif;
-}
-
-p {
+    background-color: #fafafa;
     font-family: 'Didact Gothic', sans-serif;
+    font-size: 125%;
 }
 
 h1,
@@ -19,15 +12,12 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Playfair-Display', serif;
-    color: rgb(63, 171, 204);
+    font-family: 'Prata', serif;
+    color: black;
     text-align: center;
+    font-size: 200%;
+    margin-bottom: 5px;
 }
-
-#map {
-    height: 100%;
-}
-
 section {
     margin-top: 50px;
 }
@@ -35,6 +25,7 @@ section {
 #flash-section {
     height: 20px;
     margin: 0;
+    background-color: #fafafa;
 }
 
 .flashes {
@@ -50,22 +41,47 @@ section {
 
 #head {
     height: 30vh;
-    padding: 1rem 1rem 0 1rem;
+    margin: 1rem 1rem 0 1rem;
 }
 
-#head h1 {
-    font-size: 550%;
-    color: rgb(98, 174, 197);
-    text-shadow: -1px -1px 0 rgb(247, 19, 88), 1px -1px 0 rgb(247, 19, 88), -1px 1px 0 rgb(230, 64, 114), 1px 1px 0 rgb(230, 64, 114);
+#top-background {
+    background-color: rgb(226, 80, 80);
 }
 
-#head h4 {
-    text-decoration: underline;
-    color: rgb(49, 104, 136);
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+/* Title logo - hover*/
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: rgb(148, 204, 13);
+   font-family: 'Prata', serif;
+} 
+
+/* Title logo */
+.navbar-light .navbar-brand {
+    color: rgb(148, 204, 13);
+    font-size: 300%;
+    font-family: 'Prata', serif;
+}
+
+/* problems tagline */
+.navbar-light .navbar-brand #tagline {
+    font-size: 35%;
+    color: blue;
+    font-style: italic;
 }
 
 .nav-link:hover {
     font-weight: bolder;
+}
+
+/* menu links */
+#navbarNav a {
+    color: magenta;
+    font-size: 110%;
 }
 
 /* Footer */
@@ -81,7 +97,13 @@ section {
 /* home.html */
 
 /* Top image and text */
-
+section {
+    background-color: #fafafa;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+    padding: 30px;
+}
 #photobox {
     height: 50vh;
     text-align: center;
@@ -136,16 +158,57 @@ section {
     text-align: left;
 }
 
+/* login and registration styling */
+.template-form h1 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
 .center-align h1 {
-    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.template-form {
+    width: 75%;
+}
+
+.template-form button {
+    background-color: #48b78f;
+    border: none;
+    font-family: 'Prata', serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 0;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.template-form button:hover {
+    padding-right: 25px;
+    color: #372b33;
+    background-color: #fafafa;
+    border: 1px solid #372b33;
+}
+
+.template-form a {
+    color: rgb(63, 171, 204);
 }
 
 /* first carousel*/
 
 #image-carousel-1,
 #image-carousel-2 {
-    height: 80vh;
-    padding: 2%;
+    height: 90vh;
+    padding: 1%;
 }
 
 /*-----MAP SECTION-----*/
@@ -251,6 +314,9 @@ section {
     height: 100%;
 }
 
+#carousel2indicator {
+    height: 100%;
+}
 .contact-form textarea {
     width: 90%;
     margin: 0 auto;
@@ -279,9 +345,50 @@ section {
     background-color: #fafafa;
     border: 1px solid #372b33;
 }
+/*----CONTACT.HTML--------*/
 
+#contact-page {
+    background-color: #fafafa;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+#contact-page h1 {
+
+   font-family: 'Prata', serif;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+
+}
+ #contact-page p {
+     text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+ }
 /*---IMAGE CAROUSELS---*/
 #image-carousel-1{
     background-color: #fafafa;
     height:600px
+}
+
+/* search in navbar */
+.input-field input[type=search] {
+    border: 1px solid #FFF5EB;
+    margin-top: 8px;
+    border-radius: 5%;
+}
+
+.input-field i {
+    color: #fafafa;
+}
+
+input[type="search"]:focus {
+    top: 0;
+    left: 0;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    outline: none;
 }
