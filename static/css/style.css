@@ -19,10 +19,6 @@ h5 {
     margin-bottom: 5px;
 }
 
-#map {
-    height: 100%;
-}
-
 section {
     margin-top: 50px;
 }
@@ -61,14 +57,14 @@ section {
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
     color: rgb(148, 204, 13);
-    font-family: 'Playfair-Display', serif;
+   font-family: 'Prata', serif;
 } 
 
 /* Title logo */
 .navbar-light .navbar-brand {
     color: rgb(148, 204, 13);
     font-size: 300%;
-    font-family: 'Playfair-Display', serif;
+    font-family: 'Prata', serif;
 }
 
 /* problems tagline */
@@ -101,7 +97,13 @@ section {
 /* home.html */
 
 /* Top image and text */
-
+section {
+    background-color: #fafafa;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+    padding: 30px;
+}
 #photobox {
     height: 50vh;
     text-align: center;
