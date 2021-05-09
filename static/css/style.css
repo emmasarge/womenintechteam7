@@ -290,9 +290,3 @@ section {
     background-color: #fafafa;
     height:600px
 }
-.contact-form button:hover {
-    padding-right: 25px;
-    color: #0d1922;
-    background-color: #fafafa;
-    border: 1px solid #0d1922;
-}
