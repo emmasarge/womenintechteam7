@@ -165,7 +165,7 @@ section {
 #image-carousel-1,
 #image-carousel-2 {
     height: 90vh;
-    padding: 2%;
+    padding: 1%;
 }
 
 /*-----MAP SECTION-----*/
@@ -271,6 +271,9 @@ section {
     height: 100%;
 }
 
+#carousel2indicator {
+    height: 100%;
+}
 .contact-form textarea {
     width: 90%;
     margin: 0 auto;
