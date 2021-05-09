@@ -103,7 +103,13 @@ section {
 /* home.html */
 
 /* Top image and text */
-
+section {
+    background-color: #fafafa;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+    padding: 30px;
+}
 #photobox {
     height: 50vh;
     text-align: center;
