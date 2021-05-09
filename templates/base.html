@@ -34,8 +34,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
-            <div class="container-fluid">
+                    <div class="container-fluid" id="top-background">
                 <a class="navbar-brand" href="{{ url_for('home') }}">Pedicoders</a>
+              
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -95,7 +96,7 @@
     </section>
 
     <main>
-        <h3>I got 99 problems but a bug ain't one</h3>
+       
         {% block content %}
         {% endblock %}
     </main>
