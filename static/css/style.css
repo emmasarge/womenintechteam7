@@ -122,6 +122,11 @@ section {
     text-align: center;
 }
 
+#meetups-calendar {
+   margin: auto;
+    width: 80%;
+}
+
 #meetups {
     margin: auto;
     width: 80%;
