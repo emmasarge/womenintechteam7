@@ -24,6 +24,17 @@ def home():
     return render_template("home.html")
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    if query:
+        meetups = list(mongo.db.meetups.find({"$text": {"$search": query}}))
+        return render_template(
+            "search_results.html", meetups=meetups)
+    else:
+        return redirect(url_for("home"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -101,19 +112,20 @@ def add_event():
     if "user" in session:
         if request.method == "POST":
             event = {
-                "name": request.form.get("name").lower(),
+                "name": request.form.get("event_name").lower(),
                 "description": request.form.get("description"),
                 "meetup_type": request.form.get("type"),
-                "city": request.form.getlist("city"),
-                "address": request.form.getlist("address"),
-                "date": request.form.getlist("date"),
-                "time": request.form.getlist("time"),
-                "topic": request.form.getlist("topic"),
+                "city": request.form.get("city"),
+                "address": request.form.get("address"),
+                "date": request.form.get("date"),
+                "time": request.form.get("time"),
+                "topic": request.form.get("topic"),
                 "added_by": session["user"]
                 }
-            mongo.db.meetuos.insert_one(event)
+            mongo.db.meetups.insert_one(event)
 
-            flash("Your Event Was Successfully Created and Added to the Calendar!")
+            flash(
+                "Your Event Was Successfully Created and Added to the Calendar!")
             return render_template("home.html")
 
         types = list(mongo.db.meetup_types.find().sort("meetup_type", 1))
