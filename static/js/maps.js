@@ -14,19 +14,19 @@ var map = new google.maps.Map(document.getElementById('map'),location);
         //ire
         {
           coords:{lat:53.390259, lng:-9.119985},
-          content:'<h1>Galway Gals</h1>'+ '<br>' + '<p>Weekly Zoom Meet-up to discuss coding and projects<br>Tuesdays at 18:00</p>' 
+          content:'<h3>Galway Gals</h3>'+ '<br>' + '<p>Weekly Zoom Meet-up to discuss coding and projects<br>Tuesdays at 18:00</p>' 
         },
         {
           coords:{lat:53.37923, lng:-6.27201},
-          content:'<h1>Pedicoders</h1>'+ '<br>' + '<p>Pedicures and tech talk in Ava Salon, Dublin <br>First Thursdays of every month<br>19:30<br>*Must book in advance</p>'
+          content:'<h3>Pedicoders</h3>'+ '<br>' + '<p>Pedicures and tech talk in Ava Salon, Dublin <br>First Thursdays of every month<br>19:30<br>*Must book in advance</p>'
         },
         {
           coords:{lat:51.9058, lng:-8.6162},
-          content:'<h1>Cork Coders</h1>'+ '<br>' + '<p>Meeting tbd <br> check back soon!</p>'
+          content:'<h3>Cork Coders</h3>'+ '<br>' + '<p>Meeting tbd <br> check back soon!</p>'
         },
         {
           coords:{lat:51.942662896, lng:-9.917162998},
-          content:'<h1>Code in Kerry</h1>'+ '<br>' + '<p>Meet-up at Curious Cat Cafe<br>Every Wednesday and Thursday Night<br>18:00-19:00</p>'
+          content:'<h3>Code in Kerry</h3>'+ '<br>' + '<p>Meet-up at Curious Cat Cafe<br>Every Wednesday and Thursday Night<br>18:00-19:00</p>'
         },
         
       
