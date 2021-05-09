@@ -176,6 +176,10 @@ section {
     margin-top: 30px;
 }
 
+.template-form {
+    width: 75%;
+}
+
 .template-form button {
     background-color: #48b78f;
     border: none;
