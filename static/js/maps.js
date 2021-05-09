@@ -89,6 +89,3 @@ var map = new google.maps.Map(document.getElementById('map'),location);
         'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
       });
     }
-    
-
-
