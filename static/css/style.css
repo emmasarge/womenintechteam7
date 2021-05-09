@@ -158,7 +158,8 @@ section {
     text-align: left;
 }
 
-.template-heading h1 {
+/* login and registration styling */
+.template-form h1 {
     color: black;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -172,6 +173,30 @@ section {
     letter-spacing: 1px;
     margin-bottom: 30px;
     margin-top: 30px;
+}
+
+.template-form button {
+    background-color: #48b78f;
+    border: none;
+    font-family: 'Prata', serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 0;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.template-form button:hover {
+    padding-right: 25px;
+    color: #372b33;
+    background-color: #fafafa;
+    border: 1px solid #372b33;
+}
+
+.template-form a {
+    color: rgb(63, 171, 204);
 }
 
 /* first carousel*/
