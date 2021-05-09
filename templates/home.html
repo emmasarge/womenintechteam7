@@ -50,8 +50,27 @@
         <script>
             let calendarEl = document.getElementById ('calendar');
             //instantiate an object of calendar 
-            let calendar = new FullCalendar.Calendar (calendarEl, {                            
+            let calendar = new FullCalendar.Calendar (calendarEl, { 
+                timezone: 'BST',
+                events: [
+                    {   id: 'a',
+                        title: 'coding and pedicure',
+                        start: '2021-05-21'
+                        },
+                    {   id: 'b',
+                        title: 'javascript and coffee',
+                        start: '2021-05-15'
+                        },
+                    {   id: 'c',
+                        title: 'python and chat',
+                        start: '2021-05-10'
+                        }     
+                   
+                ]                          
             });
+            var event = calendar.getEventById('a') // an event object
+            var start = event.start // a property (a Date object)
+            //console.log(start.toISOString())
             calendar.render();
         </script>
     </div>  
