@@ -2,8 +2,9 @@
 
 
 body {
-    background-color: #fdd1d1;
+    background-color: #f0dcdc;
     font-family: 'Montserrat', sans-serif;
+    color:rgb(26, 26, 26)
 }
 
 h1 h3 {
@@ -20,7 +21,7 @@ h3,
 h4,
 h5 {
     font-family: 'Playfair-Display', serif;
-    color: rgb(63, 171, 204);
+    color: rgb(69, 180, 214);
     text-align: center;
 }
 
@@ -64,7 +65,7 @@ section {
 
 #head h1 {
     font-size: 550%;
-    color: rgb(98, 174, 197);
+    color: rgb(26, 109, 134);
     text-shadow: -1px -1px 0 rgb(247, 19, 88), 1px -1px 0 rgb(247, 19, 88), -1px 1px 0 rgb(230, 64, 114), 1px 1px 0 rgb(230, 64, 114);
 }
 
