@@ -1,11 +1,11 @@
 # [pedicoders](https://pedi-coders.herokuapp.com/)
 
-We are a female group of coders, team 7 in the women in technology hackathon, who are taking part in the Code Institute Hackathon in May 2021.  4 of us are current students of software engineering at Code Institute and 1 of us is a graduate of the software engineering course.  We used a trello board [trello](https://trello.com/b/8ghwtoih/team-seven-hackathon) to keep track of all the tasks we had to do to make this app and we used github collaboratively, creating a repo which we all contributed to.
+We are a female group of coders, Emma, Laura, Iryna, Bekki and Deborah -   team 7 in the women in technology hackathon, who are taking part in the Code Institute Hackathon in May 2021.  We used a trello board [trello](https://trello.com/b/8ghwtoih/team-seven-hackathon) to keep track of all the tasks we had to do to make this app and we used github collaboratively, creating a repo which we all contributed to.
 
 
 This is an app for empowering female coders.  Women coders are under-represnted in the world of coding.  For example only 1.5% of persons involved in open source projects are female and the proportion of female software engineers currently stands at around 20%.  Additionally the number of females taking courses in computer science at university has been declining since 1990.  There are many reasons why girls are put off coding at school and at home, sometimes it is seen as a hard subject- one that requires hours of study and practice, and sometimes girls are faced with a classroom full of boys when they take a coding class or join a coding group.  So an app like this is needed to give girls and women an idea of what coding is and how coding can lead to a good career as a software engineer.  
 
-Wireframes earlier and was working from these when creating my app, but decided to add them in to a folder called wireframes at the top level of my app.  ![Wireframes](/wireframes/wireframes.pdf)
+Wireframes earlier and was working from these when creating my app, but decided to add them in to a folder called wireframes at the top level of my app.  ![Wireframes](/wireframes/wit_wireframes.pdf)
 
    
 ## UX
@@ -43,10 +43,11 @@ Wireframes earlier and was working from these when creating my app, but decided 
 
 * [CSS](https://www.w3schools.com/Css/) stands for Cascading Style sheets which is a type of style language which sets out how the webpage should be styled. It allows the user to style the webpage in a particular way, making the UX richer and more meaningful for the user.
 
-
 * [jquery](https://jquery.com/) is used to simplify DOM manipulation. Jquery is a javascript library that is used to provide interactivity on websites. The $ sign signals to the browser that jquery is being used.
 
 * [Python](https://www.python.org/psf-landing/) is a high level programming language used for apps in many frameworks such as flask, pyramid and django. Python supports many programming paradigms and is object orientated and has a comprehensive set of libraries. Python is managed by a non profit organsation the Python software foundation.  The version of Python I used in my app is 3.7.
+
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) is a micro framework used to build web applications.  Flask has a small and easily extendable core which gives the developer control over which databases and other third party resources to use when developing an app.
 
 * we used [Mongodb](https://www.mongodb.com/cloud/atlas) for the models in the database, although sqlite3 is available in flask. This was because my app is deployed to heroku and heroku is an ephemeral file system so my data would disappear each time I logged into heroku! Postgres is an open source object-relational database system that provides the user with the facility to create, read, update and delete documents data.
 
