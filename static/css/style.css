@@ -81,7 +81,10 @@ section {
 .nav-link:hover {
     font-weight: bolder;
 }
-
+.navbar-light .navbar-nav .active > .nav-link {
+    text-decoration: underline;
+    color: white;
+}
 /* menu links */
 #navbarNav a {
     color: #fafafa;
@@ -362,3 +365,54 @@ a {
     height: 100%;
 }
 
+/*----meetups page----*/
+#meetups {
+    margin: auto;
+    width: 80%;
+}
+#headingOne h2 {
+    text-align: left;
+}
+/* login and registration styling */
+.template-form h1 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.center-align h1 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.template-form {
+    width: 75%;
+}
+.template-form button {
+    background-color: #48B78F;
+    border: none;
+    font-family: ‘Prata’, serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 0;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.template-form button:hover {
+    padding-right: 25px;
+    color: #372B33;
+    background-color: #FAFAFA;
+    border: 1px solid #372B33;
+}
+.template-form a {
+    color: rgb(63, 171, 204);
+}
+.btn-link {
+    color: rgb(195, 84, 106);
+}
