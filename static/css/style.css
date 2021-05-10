@@ -5,10 +5,12 @@ body {
     background-color: #fafafa;
     font-size: 120%;
 }
+
 #home-page {
-   background-image: url("../images/abstract-bg.png");
-  background-repeat:repeat;
+    background-image: url("../images/abstract-bg.png");
+    background-repeat: repeat;
 }
+
 .page-top {
     margin-top: 75px;
 }
@@ -34,7 +36,7 @@ h5 {
 section {
     margin-bottom: 50px;
     background-color: #fafafa;
-    
+
 }
 
 
@@ -64,6 +66,7 @@ section {
     padding: 0;
 
 }
+
 /* search in navbar */
 .input-field input[type=search] {
     border: 1px solid #FFF5EB;
@@ -71,9 +74,11 @@ section {
     border-radius: 5%;
     background-color: #fafafa;
 }
+
 .input-field i {
     color: #FAFAFA;
 }
+
 input[type="search"]:focus {
     top: 0;
     left: 0;
@@ -82,6 +87,7 @@ input[type="search"]:focus {
     margin-bottom: 8px;
     outline: none;
 }
+
 /* Title logo - hover*/
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
@@ -101,10 +107,12 @@ input[type="search"]:focus {
 .nav-link:hover {
     font-weight: bolder;
 }
-.navbar-light .navbar-nav .active > .nav-link {
+
+.navbar-light .navbar-nav .active>.nav-link {
     text-decoration: underline;
     color: white;
 }
+
 /* menu links */
 #navbarNav a {
     color: #fafafa;
@@ -143,9 +151,11 @@ section {
     float: left;
     margin-top: 12vh;
 }
+
 a {
-    color:#c3564a;
+    color: #c3564a;
 }
+
 .right-text {
     padding-top: 30px;
     width: 20%;
@@ -169,14 +179,16 @@ a {
 #landing-intro h2 {
     text-align: center;
 }
-#landing-intro p{
+
+#landing-intro p {
     font-family: 'Prata', serif;
     letter-spacing: 1px;
     text-align: center;
-    margin-left:7%;
-    margin-right:7%;
+    margin-left: 7%;
+    margin-right: 7%;
     line-height: 40px;
 }
+
 .landing-sentence {
     text-transform: uppercase;
     font-weight: 600;
@@ -187,6 +199,7 @@ a {
     margin: auto;
     width: 100%;
 }
+
 #calendar {
     width: 80%;
     padding-bottom: 30px;
@@ -195,10 +208,11 @@ a {
     margin-right: 100px;
     margin-left: 100px;
 }
+
 #meetups {
     margin: auto;
     width: 80%;
-   
+
 }
 
 #headingOne h2 {
@@ -352,7 +366,7 @@ a {
     padding: 30px;
     padding-bottom: 50px;
 
-    
+
 }
 
 #contact-page h1 {
@@ -379,6 +393,7 @@ a {
     height: 600px;
     margin-top: 50px;
 }
+
 .carousel-inner {
     height: 100%;
 }
@@ -393,9 +408,11 @@ a {
     margin: auto;
     width: 80%;
 }
+
 #headingOne h2 {
     text-align: left;
 }
+
 /* login and registration styling */
 .template-form h1 {
     color: black;
@@ -404,6 +421,7 @@ a {
     margin-bottom: 15px;
     margin-top: 30px;
 }
+
 .center-align h1 {
     color: black;
     text-transform: uppercase;
@@ -411,9 +429,11 @@ a {
     margin-bottom: 30px;
     margin-top: 30px;
 }
+
 .template-form {
     width: 75%;
 }
+
 .template-form button {
     background-color: #48B78F;
     border: none;
@@ -427,15 +447,18 @@ a {
     margin: 0 auto;
     display: block;
 }
+
 .template-form button:hover {
     padding-right: 25px;
     color: #372B33;
     background-color: #FAFAFA;
     border: 1px solid #372B33;
 }
+
 .template-form a {
     color: rgb(63, 171, 204);
 }
+
 .btn-link {
     color: rgb(195, 84, 106);
 }
@@ -446,17 +469,20 @@ a {
         width: 100%;
         margin: 0 auto;
     }
+
     .navbar-light .navbar-brand {
-    color: #fafafa;
-    font-size: 200%;
-    font-family: 'Prata', serif;
-  
-}
+        color: #fafafa;
+        font-size: 200%;
+        font-family: 'Prata', serif;
+
+    }
+
     #photobox {
         width: 100%;
         height: auto;
         margin: 0 auto;
     }
+
     .left-text,
     .right-text {
         float: left;
@@ -464,28 +490,35 @@ a {
         margin: 0 1%;
         text-align: center;
     }
+
     #one {
         float: left;
-        width: 95%;
+        width: 100%;
     }
+
     #landing-intro,
-    #meetups-calendar  {
+    #meetups-calendar {
         width: 90%;
         height: auto;
         margin: 0 3%;
         float: right;
         text-align: justify;
     }
+
     #meetups-calendar h2 {
         text-align: center;
     }
+
     #calendar {
         height: 90vh;
     }
-    #image-carousel-2, #image-carousel-1 {
+
+    #image-carousel-2,
+    #image-carousel-1 {
         margin-bottom: 0;
         height: auto;
     }
+
     #maps .meeting-text {
         text-align: center;
     }
