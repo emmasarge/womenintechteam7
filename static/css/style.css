@@ -153,10 +153,12 @@ section {
 
 #landing-intro {
     margin-top: 5%;
+    padding: 0 11%;
 }
 
 #landing-intro h2 {
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 #meetups-calendar {
