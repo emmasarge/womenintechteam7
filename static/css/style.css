@@ -76,12 +76,6 @@ section {
     margin-left: 30px;
 }
 
-/* problems tagline */
-.navbar-light .navbar-brand #tagline {
-    font-size: 35%;
-    color: blue;
-    font-style: italic;
-}
 
 .nav-link:hover {
     font-weight: bolder;
@@ -91,6 +85,7 @@ section {
 #navbarNav a {
     color: #fafafa;
     font-size: 110%;
+     font-family: 'Prata', serif;
 }
 
 /* Footer */
