@@ -396,9 +396,12 @@ a {
 
 .carousel-inner {
     height: 100%;
+    
 }
 
-
+#image-carousel-2 {
+    object-fit: contain;
+}
 #carouselExampleIndicators {
     height: 100%;
 }
