@@ -3,7 +3,6 @@
 
 body {
     background-color: #fafafa;
-
     font-size: 120%;
 }
 #home-page {
@@ -167,6 +166,9 @@ section {
     width: 80%;
     padding-bottom: 30px;
     margin-top: 50px;
+    height: 500px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 #meetups {
     margin: auto;
@@ -186,7 +188,7 @@ section {
 
 #image-carousel-1,
 #image-carousel-2 {
-    height: 90vh;
+    height: 50vh;
     padding: 2%;
 }
 
@@ -238,7 +240,7 @@ section {
 
 .meeting-text {
     margin-bottom: 30px;
-   
+}
 
 /*---- CONTACT SECTION ---*/
 #contact {
@@ -357,8 +359,3 @@ section {
     margin-top: 50px;
 }
 
-#calendar {
-    height: 500px;
-    margin-right: 100px;
-    margin-left: 100px;
-}
