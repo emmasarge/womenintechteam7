@@ -376,7 +376,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 15px;
-    padding-top: 100px;
+    margin-top: 100px;
 
 }
 
@@ -399,9 +399,7 @@ a {
     
 }
 
-#image-carousel-2 {
-    object-fit: contain;
-}
+
 #carouselExampleIndicators {
     height: 100%;
 }
