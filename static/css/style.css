@@ -504,22 +504,48 @@ a {
         float: right;
         text-align: justify;
     }
+    #landing-intro p {
+    font-family: 'Prata', serif;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: normal;
+    font-size: small;
+   
+}
+ #landing-intro .landing-sentence {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
 
     #meetups-calendar h2 {
         text-align: center;
     }
 
     #calendar {
-        height: 90vh;
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        padding-bottom: 0;
+        padding-top: 10px;
     }
+  .fc-toolbar-chunk {
+      font-size: 12px;
+  }
 
     #image-carousel-2,
     #image-carousel-1 {
         margin-bottom: 0;
         height: auto;
     }
-
-    #maps .meeting-text {
-        text-align: center;
+#maps h3{
+    text-align: center;
+    margin: 0;
+}
+    #maps p {
+        text-align: justify;
+        margin: 0;
     }
 }
