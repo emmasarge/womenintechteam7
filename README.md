@@ -118,14 +118,11 @@ but mongodb is a persistent database so data saved to the database is saved for 
 
 [Mongodb](https://www.mongodb.com/cloud/atlas) is an open source nosql database.Flask does not determine a type of database to be used but mongodb is a persistent database so data saved to the database is saved for users to access in the app as appropriate.  In atlas mongodb, each project has a collection and within each collection are several clusters, with each cluster being a database for use by an app.
 
-<<<<<<< HEAD
 The Pedicoders website used two clusters/databases. The first model was used to hold details of events.  This had the following field:  name, description, meetuptype, city, address, date, time, topic.  The second model held users details:  username and user password.
-=======
 In flask, data models are the database collections which store data about the objects in the database.  The Pedicoders website used 
 four models. The first model was used to hold details of events. This had the following field:  name, description, meetup_type, city, 
 address, date, time, topic, and added_by. The second model held users details: username and user password. The other two collections
 were created for storing event types and topics for easier display and better user experience.
->>>>>>> 334e301396148a7b1cec7b81808f161ae0bb2031
 
 
 ## Testing
@@ -192,7 +189,6 @@ We all worked in different ways but overall the process used by collaborators wa
 
 
 All collaborators then did the following:
-<<<<<<< HEAD
 1. Created a virtual environment and made a .gitignore file.  I then installed django.
 2. Put all the virtual environment files and database files into .gitignore so that they would not be pushed to github.
 
@@ -200,7 +196,6 @@ Deploying the app to heroku:
 1.  Before pushing to heroku a requirements.txt file had to be created. This provided heroku with details of the versions of technologies used for this project. 
 2.  Two collaborators working together pushed the app to heroku successfully.
 
-=======
 2. We created a virtual environment and made a .gitignore file. I then installed django.
 3. We put all the virtual environment files and database files into .gitignore so that they would not be pushed to github.
 4. One collaborator created a new github repo and initialised a local repo for the project.
@@ -208,20 +203,16 @@ Deploying the app to heroku:
 6. Before pushing to heroku a requirements.txt file had to be created. This provided heroku with details of the versions of technologies used for this project. 
 7. Each collaborator had to install the relevant files in order to be able to run flask in their local environment.
 8. Each collaborator created a local branch to work on and created pull requests which were then merged into the project once they had been checked by other members of the team.
->>>>>>> 334e301396148a7b1cec7b81808f161ae0bb2031
  
   
 ## Future improvements
 
-<<<<<<< HEAD
  1. Get the calendjs api to read event onjects from the database.  A method needed to be written to do this but unfortunately there was not enough time to do this so events were hardcoded into the calendar.
  2. Allow  a user to search for relevant meetups.
  3. Add a blog on female coders.
  4. Allow users to add events to the calendar, which would need to be moderated first so a moderator admin area would also need to be created as well.
-=======
  1. Add user's events to profile page.
  1. Add a blog on female coders.
->>>>>>> 334e301396148a7b1cec7b81808f161ae0bb2031
  
 
 ## Credits
