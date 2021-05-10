@@ -438,6 +438,7 @@ a {
 
 .template-form button {
     background-color: #48B78F;
+    color: #fafafa;
     border: none;
     font-family: ‘Prata’, serif;
     font-size: 24px;
@@ -466,6 +467,7 @@ a {
 }
 .button-register {
     background-color: #48b78f;
+    color: #fafafa;
 }
 
 /*--- media queries ----*/
