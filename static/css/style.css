@@ -9,6 +9,9 @@ body {
    background-image: url("../images/abstract-bg.png");
   background-repeat:repeat;
 }
+.page-top {
+    margin-top: 75px;
+}
 
 p {
     font-family: 'Didact Gothic', sans-serif;
@@ -61,7 +64,24 @@ section {
     padding: 0;
 
 }
-
+/* search in navbar */
+.input-field input[type=search] {
+    border: 1px solid #FFF5EB;
+    margin-top: 8px;
+    border-radius: 5%;
+    background-color: #fafafa;
+}
+.input-field i {
+    color: #FAFAFA;
+}
+input[type="search"]:focus {
+    top: 0;
+    left: 0;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    outline: none;
+}
 /* Title logo - hover*/
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
