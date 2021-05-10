@@ -53,7 +53,7 @@ section {
 }
 
 #top-background {
-    background-color: rgb(226, 80, 80);
+    background-color: #c3564a;
 }
 
 .navbar {
@@ -64,15 +64,16 @@ section {
 /* Title logo - hover*/
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
-    color: rgb(148, 204, 13);
+    color: #372b33;
    font-family: 'Prata', serif;
 } 
 
 /* Title logo */
 .navbar-light .navbar-brand {
-    color: rgb(148, 204, 13);
+    color: #fafafa;
     font-size: 300%;
     font-family: 'Prata', serif;
+    margin-left: 30px;
 }
 
 /* problems tagline */
@@ -88,7 +89,7 @@ section {
 
 /* menu links */
 #navbarNav a {
-    color: magenta;
+    color: #fafafa;
     font-size: 110%;
 }
 
