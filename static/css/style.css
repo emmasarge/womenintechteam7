@@ -66,7 +66,7 @@ section {
 /* Title logo */
 .navbar-light .navbar-brand {
     color: #F4F6F4;
-    font-size: 300%;
+    font-size: 3.5rem;
     font-family: 'Prata', serif;
 /*     font-family: 'Playfair-Display', serif; */
 }
@@ -221,6 +221,7 @@ section {
 
 .btn-link {
     color: rgb(195,	84,	106);
+}
 
 /*-----MAP SECTION-----*/
 #map {
@@ -421,8 +422,13 @@ input[type="search"]:focus {
 
 @media screen and (max-width: 950px) {
 
+    header{
+        width: 100%;
+        margin: 0 auto;
+    }
+
     #photobox {
-        width: 90%;
+        width: 85%;
         height: auto;
         margin: 0 auto;
     }
