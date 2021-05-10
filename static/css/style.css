@@ -204,9 +204,10 @@ a {
     width: 80%;
     padding-bottom: 30px;
     margin-top: 50px;
-    height: 500px;
+    height: 400px;
     margin-right: 100px;
     margin-left: 100px;
+    overflow: scroll;
 }
 
 #meetups {
@@ -301,6 +302,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 15px;
+   
 }
 
 .contact-heading p {
@@ -370,8 +372,7 @@ a {
 }
 
 #contact-page h1 {
-
-    font-family: 'Prata', serif;
+ font-family: 'Prata', serif;
     color: black;
     text-transform: uppercase;
     letter-spacing: 3px;

@@ -22,29 +22,41 @@
 </section>
 
 <!--calendar and meetups section-->
-<section class="page-section container-fluid" id="meetups-calendar">
-    <h2>Meetups & Calendar</h2>
-    <p>
-        Women who code together grow together, so here's a list of upcoming meet-ups!<br>
-        We want everyone to feel included and encouraged, so we host a whole range of events to suit you. <br>
-        From study sessions to get help and insight into your work, to coffee dates to take a break and have
-        some banter with like minded people.
-    </p>
-    
+<!--calendar section-->
+<section class="page-section container-fluid" id="calendar-section">
+    <h2>Calendar</h2>
     <p>The calendar shows the meet-ups happening soon! Don't see any, or don't have a day that suits?<br>
-        Feel free to pop us a message on our <a href="#contact">contact us form</a> page to suggest an event near you
-        at a time that suits!</p>
-
-    
-    <div id="calendar">   
+        Feel free to pop us a message on our <a href="#contact">contact us</a> form to suggest an event near
+        you at a time that suits!</p>
+    <div id="calendar">
         <script>
-            let calendarEl = document.getElementById ('calendar');
+            let calendarEl = document.getElementById('calendar');
             //instantiate an object of calendar 
-            let calendar = new FullCalendar.Calendar (calendarEl, {                            
+            let calendar = new FullCalendar.Calendar(calendarEl, {
+                timezone: 'BST',
+                events: [{
+                        id: 'a',
+                        title: 'coding and pedicure',
+                        start: '2021-05-21'
+                    },
+                    {
+                        id: 'b',
+                        title: 'javascript and coffee',
+                        start: '2021-05-15'
+                    },
+                    {
+                        id: 'c',
+                        title: 'python and chat',
+                        start: '2021-05-10'
+                    }
+                ]
             });
+            var event = calendar.getEventById('a') // an event object
+            var start = event.start // a property (a Date object)
+            //console.log(start.toISOString())
             calendar.render();
         </script>
-    </div>  
+    </div>
 </section>
 
 <section class="page-section container-fluid" id="image-carousel-1">
