@@ -190,7 +190,7 @@ a {
 
 #image-carousel-1,
 #image-carousel-2 {
-    height: 50vh;
+    height: 600px;
     padding: 2%;
 }
 
@@ -290,14 +290,7 @@ a {
     padding-left: 10px;
 }
 
-.carousel-inner {
-    height: 100%;
-}
 
-
-#carouselExampleIndicators {
-    height: 100%;
-}
 
 .contact-form textarea {
     width: 90%;
@@ -359,5 +352,13 @@ a {
     background-color: #fafafa;
     height: 600px;
     margin-top: 50px;
+}
+.carousel-inner {
+    height: 100%;
+}
+
+
+#carouselExampleIndicators {
+    height: 100%;
 }
 
