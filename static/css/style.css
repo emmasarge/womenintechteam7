@@ -380,7 +380,9 @@ section {
 #image-carousel-2 {
     height: 90vh;
     padding: 1%;
+    overflow: hidden;
 }
+
 #image-carousel-1 {
     background-color: #fafafa;
 }
@@ -438,7 +440,7 @@ input[type="search"]:focus {
         float: left;
         width: 90%;
         margin: 0 1%;
-        text-align: justify;
+        text-align: center;
     }
 
     #one {
@@ -446,7 +448,6 @@ input[type="search"]:focus {
         width: 95%;
     }
 
-    
     #landing-intro, 
     #meetups-calendar  {
         width: 90%;
@@ -456,13 +457,15 @@ input[type="search"]:focus {
         text-align: justify;
     }
 
-    
-
     #meetups-calendar h2 {
         text-align: center;
     }
 
-    #image-carousel-2 {
+    #calendar {
+        height: 90vh;
+    }
+
+    #image-carousel-2, #image-carousel-1 {
         margin-bottom: 0;
         height: auto;
     }
