@@ -181,11 +181,10 @@ We then checked that the app was now deployed via Heroku
 We all worked in different ways but overall the process used by collaborators was as follows:
 
 1.  One collaborator set up the flask environment and associated files for use by other collaborators and also created a trello board.  Details of the tasks carried out by each person are on the trello board [trello](https://trello.com/b/8ghwtoih/team-seven-hackathon).  Each collaborator worked on their own parts of the task as shown on the cards, and when each task was done the cards were moved to the "done" part of the trello board.
-
-1. One collaborator created a new github repo and initialised a local repo for the project.
-2. An env file was created to hold passwords for the atlas  database   This file was put in .gitignore.
-3. Each collaborator had to install the relevant files in order to be able to run flask in their local environment.
-4. Each collaborator created a local branch to work on and created pull requests which were then merged into the project once they had been checked by other members of the team.
+2. One collaborator created a new github repo and initialised a local repo for the project.
+3. An env file was created to hold passwords for the atlas  database   This file was put in .gitignore.
+4. Each collaborator had to install the relevant files in order to be able to run flask in their local environment.
+5. Each collaborator created a local branch to work on and created pull requests which were then merged into the project once they had been checked by other members of the team.
 
 
 All collaborators then did the following:
@@ -211,8 +210,8 @@ Deploying the app to heroku:
  2. Allow  a user to search for relevant meetups.
  3. Add a blog on female coders.
  4. Allow users to add events to the calendar, which would need to be moderated first so a moderator admin area would also need to be created as well.
- 1. Add user's events to profile page.
- 1. Add a blog on female coders.
+ 5. Add user's events to profile page.
+ 6. Add a blog on female coders.
  
 
 ## Credits
