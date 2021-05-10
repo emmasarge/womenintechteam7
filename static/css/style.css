@@ -18,6 +18,7 @@ h5 {
     font-size: 200%;
     margin-bottom: 5px;
 }
+
 section {
     margin-top: 50px;
 }
@@ -44,8 +45,8 @@ section {
     margin: 1rem 1rem 0 1rem;
 }
 
-#top-background {
-    background-color: rgb(226, 80, 80);
+.top-background {
+    background-color: rgb(195,	84,	106);
 }
 
 .navbar {
@@ -57,14 +58,21 @@ section {
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
     color: rgb(148, 204, 13);
-   font-family: 'Prata', serif;
-} 
+    font-family: 'Prata', serif;
+   /* font-family: 'Playfair-Display', serif; */
+}
+
 
 /* Title logo */
 .navbar-light .navbar-brand {
-    color: rgb(148, 204, 13);
-    font-size: 300%;
+    color: #F4F6F4;
+    font-size: 3.5rem;
     font-family: 'Prata', serif;
+/*     font-family: 'Playfair-Display', serif; */
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #F4F6F4;
 }
 
 /* problems tagline */
@@ -75,13 +83,19 @@ section {
 }
 
 .nav-link:hover {
+    color: #F4F6F4;
     font-weight: bolder;
 }
 
 /* menu links */
-#navbarNav a {
-    color: magenta;
+.navbar-light .navbar-nav .nav-link {
+    color: #F4F6F4;
     font-size: 110%;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    text-decoration: underline;
+    color: white;
 }
 
 /* Footer */
@@ -104,6 +118,7 @@ section {
     margin-bottom: 50px;
     padding: 30px;
 }
+
 #photobox {
     height: 50vh;
     text-align: center;
@@ -138,14 +153,16 @@ section {
 
 #landing-intro {
     margin-top: 5%;
+    padding: 0 11%;
 }
 
 #landing-intro h2 {
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 #meetups-calendar {
-   margin: auto;
+    margin: auto;
     width: 80%;
 }
 
@@ -192,6 +209,7 @@ section {
     margin: 0 auto;
     display: block;
 }
+
 .template-form button:hover {
     padding-right: 25px;
     color: #372b33;
@@ -203,12 +221,8 @@ section {
     color: rgb(63, 171, 204);
 }
 
-/* first carousel*/
-
-#image-carousel-1,
-#image-carousel-2 {
-    height: 90vh;
-    padding: 1%;
+.btn-link {
+    color: rgb(195,	84,	106);
 }
 
 /*-----MAP SECTION-----*/
@@ -218,23 +232,23 @@ section {
     position: relative;
     overflow: visible;
     margin-bottom: 20px;
-    margin-top:10px;
-   
-    
+    margin-top: 10px;
+
+
 }
 
 #maps {
     background-color: #fafafa;
-    padding:50px;
+    padding: 50px;
     overflow: scroll;
 }
 
 #maps p {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 18px;
-     margin-left: 30px;
-    
-     margin-bottom: 10px;
+    margin-left: 30px;
+
+    margin-bottom: 10px;
 
 }
 
@@ -255,6 +269,7 @@ section {
     margin-left: 30px;
     padding-top: 30px;
 }
+
 .meeting-text {
     margin-bottom: 30px;
 }
@@ -305,18 +320,7 @@ section {
     padding-left: 10px;
 }
 
-.carousel-inner {
-    height: 100%;
-}
 
-
-#carouselExampleIndicators {
-    height: 100%;
-}
-
-#carousel2indicator {
-    height: 100%;
-}
 .contact-form textarea {
     width: 90%;
     margin: 0 auto;
@@ -339,12 +343,14 @@ section {
     margin: 0 auto;
     display: block;
 }
+
 .contact-form button:hover {
     padding-right: 25px;
     color: #372b33;
     background-color: #fafafa;
     border: 1px solid #372b33;
 }
+
 /*----CONTACT.HTML--------*/
 
 #contact-page {
@@ -352,25 +358,47 @@ section {
     padding: 30px;
     padding-bottom: 50px;
 }
+
 #contact-page h1 {
 
-   font-family: 'Prata', serif;
+    font-family: 'Prata', serif;
     color: black;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 15px;
 
 }
- #contact-page p {
-     text-align: center;
+
+#contact-page p {
+    text-align: center;
     font-family: 'Didact Gothic', sans-serif;
     font-size: 18px;
     margin-bottom: 30px;
- }
+}
+
 /*---IMAGE CAROUSELS---*/
-#image-carousel-1{
+
+#image-carousel-1,
+#image-carousel-2 {
+    height: 90vh;
+    padding: 1%;
+    overflow: hidden;
+}
+
+#image-carousel-1 {
     background-color: #fafafa;
-    height:600px
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+#carouselExampleIndicators {
+    height: 100%;
+}
+
+#carousel2indicator {
+    height: 100%;
 }
 
 /* search in navbar */
@@ -378,6 +406,7 @@ section {
     border: 1px solid #FFF5EB;
     margin-top: 8px;
     border-radius: 5%;
+    background-color: rgb(195,	84,	106);
 }
 
 .input-field i {
@@ -391,4 +420,55 @@ input[type="search"]:focus {
     margin-top: 8px;
     margin-bottom: 8px;
     outline: none;
+}
+
+/* Responsiveness for smaller screens */
+
+@media screen and (max-width: 950px) {
+
+    header{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #photobox {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .left-text,
+    .right-text {
+        float: left;
+        width: 90%;
+        margin: 0 1%;
+        text-align: center;
+    }
+
+    #one {
+        float: left;
+        width: 95%;
+    }
+
+    #landing-intro, 
+    #meetups-calendar  {
+        width: 90%;
+        height: auto;
+        margin: 0 3%;
+        float: right;
+        text-align: justify;
+    }
+
+    #meetups-calendar h2 {
+        text-align: center;
+    }
+
+    #calendar {
+        height: 90vh;
+    }
+
+    #image-carousel-2, #image-carousel-1 {
+        margin-bottom: 0;
+        height: auto;
+    }
 }
