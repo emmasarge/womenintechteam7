@@ -113,13 +113,10 @@ for details of coding meetups.
 
 ## Databases used
 
-<<<<<<< HEAD
-=======
 [SQLite3](https://www.sqlite.org/index.html) is a database provided by flask and is the default database for flask projects but was 
 not used in this project.
 [Mongodb](https://www.mongodb.com/cloud/atlas) is an open source nosql database. Flask does not determine a type of database to be used 
 but mongodb is a persistent database so data saved to the database is saved for users to access in the app as appropriate.
->>>>>>> 334e301396148a7b1cec7b81808f161ae0bb2031
 
 [Mongodb](https://www.mongodb.com/cloud/atlas) is an open source nosql database.Flask does not determine a type of database to be used but mongodb is a persistent database so data saved to the database is saved for users to access in the app as appropriate.  In atlas mongodb, each project has a collection and within each collection are several clusters, with each cluster being a database for use by an app.
 
