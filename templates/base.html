@@ -43,6 +43,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
+                         <li class="nav-item">
+                            <form action="{{ url_for('search') }}" method="post">
+                                <div class="input-field">
+                                    <input id="query" name="query" type="search" required>
+                                    <label class="label-icon" for="query"><i class="fas fa-search right"></i></label>
+                                </div>
+                            </form>
+                        </li>
                         
                         <li class="nav-item active">
                             <a class="nav-link" href="{{ url_for('home') }}">Home<span
@@ -68,14 +76,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <form action="{{ url_for('search') }}" method="post">
-                                <div class="input-field">
-                                    <input id="query" name="query" type="search" required>
-                                    <label class="label-icon" for="query"><i class="fas fa-search right"></i></label>
-                                </div>
-                            </form>
-                        </li>
+                       
                          {% endif %}
                     </ul>
                 </div>
@@ -83,7 +84,7 @@
         </div>
     </header>
 
-    <section id="flash-section">
+    <div id="flash-section">
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -94,7 +95,7 @@
         {% endfor %}
         {% endif %}
         {% endwith %}
-    </section>
+    </div>
 
     <main>
        

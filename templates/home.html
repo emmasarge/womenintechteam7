@@ -1,43 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
-
-<div class="container-fluid" id="photobox">
-    <div class="left-text">
-        <h3 id="leftone">EMPOWERED<br>WOMEN</h3>
-    </div>
-    <div class="right-text">
-        <h3 id="rightone">EMPOWER<br>WOMEN</h3>
-    </div>
+<body id="home-page">
     <div class="center-image">
-        <img src="../static/images/pexels-radomir-jordanovic-1644888.jpg" alt="3 women smiling at camera" id="one">
+        <img src="../static/images/hero-banner.png" class="img-fluid max-width: 100%" alt="3 women smiling at camera" id="one">
     </div>
-</div>
+
 
 <section class="page-section container-fluid" id="landing-intro">
-    <h2>About</h2>
-    <p>
-        Here at Pedicoders we believe women are <strong>unstoppable</strong>.<br>
-        Identifying as a woman brings a new and innovative perspective to a currently male dominated industry. <br>
+    <p class ="landing-sentence">
+        Here at Pedicoders we believe women are <strong>unstoppable</strong>.</p>
+        <p>
+        Identifying as a woman brings a new and innovative perspective to a currently male dominated industry. 
         Despite common misconceptions, women make excellent coders. In fact, there is some suggestion women
         might even be better coders than men <a href="https://www.livescience.com/53729-bias-against-female-coders.html"
             target="_blank">*gasp*</a>. But women only get this recognition of being an excellent
-        coder if they keep one single piece of information hidden: their gender. <br>
-        <strong>We think it's time to change this. </strong> <br>
+        coder if they keep one single piece of information hidden: their gender. 
+        <strong>We think it's time to change this. </strong> 
         So pull up a chair with your girlfriends and get coding. Whether you're a complete beginner, or seasoned
         professional, we want to hear from you all.
     </p>
 </section>
 
 <!--calendar and meetups section-->
-<section class="page-section container-fluid id="meetups-calendar">
-    <h2>Meetups</h2>
+<section class="page-section container-fluid" id="meetups-calendar">
+    <h2>Meetups & Calendar</h2>
     <p>
         Women who code together grow together, so here's a list of upcoming meet-ups!<br>
         We want everyone to feel included and encouraged, so we host a whole range of events to suit you. <br>
         From study sessions to get help and insight into your work, to coffee dates to take a break and have
         some banter with like minded people.
     </p>
-    <h2>Calendar</h2>
+    
     <p>The calendar shows the meet-ups happening soon! Don't see any, or don't have a day that suits?<br>
         Feel free to pop us a message on our <a href="#contact">contact us form</a> page to suggest an event near you
         at a time that suits!</p>
@@ -54,7 +47,7 @@
     </div>  
 </section>
 
-<section class="page-section container" id="image-carousel-1">
+<section class="page-section container-fluid" id="image-carousel-1">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -124,7 +117,7 @@
 </section>
 
 <!-- image carousel -->
-<section class="page-section container" id="image-carousel-2">
+<section class="page-section container-fluid" id="image-carousel-2">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -190,3 +183,4 @@
 
     {% endblock %}
 </footer>
+</body>
