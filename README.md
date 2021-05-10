@@ -14,15 +14,12 @@ an app like this is needed to give girls and women a power of unity and together
 allowing to combine fun and studies. By creating and attending events like pedicode (pedicure and coding session), coffee & code,
 playdate & code, all women no matter what their current situation or background is get a chance to grow together.
 
-<<<<<<< HEAD
 Wireframes earlier and was working from these when creating my app, but decided to add them in to a folder called wireframes at the top level of the app.  ![Wireframes](wireframes/wit_wireframes.pdf)
-=======
 
 ## Wireframes
 
 In order to have some basic structure in place and to be on the same page, we created [wireframes](/wireframes/wireframes.pdf) 
 and were working from these when creating our app.
->>>>>>> 334e301396148a7b1cec7b81808f161ae0bb2031
 
    
 ## UX
@@ -108,13 +105,10 @@ for details of coding meetups.
 
 ## Databases used
 
-<<<<<<< HEAD
-=======
 [SQLite3](https://www.sqlite.org/index.html) is a database provided by flask and is the default database for flask projects but was 
 not used in this project.
 [Mongodb](https://www.mongodb.com/cloud/atlas) is an open source nosql database. Flask does not determine a type of database to be used 
 but mongodb is a persistent database so data saved to the database is saved for users to access in the app as appropriate.
->>>>>>> 334e301396148a7b1cec7b81808f161ae0bb2031
 
 [Mongodb](https://www.mongodb.com/cloud/atlas) is an open source nosql database.Flask does not determine a type of database to be used but mongodb is a persistent database so data saved to the database is saved for users to access in the app as appropriate.  In atlas mongodb, each project has a collection and within each collection are several clusters, with each cluster being a database for use by an app.
 
